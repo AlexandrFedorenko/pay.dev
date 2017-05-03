@@ -1,0 +1,120 @@
+.icon-cake-y,
+.icon-cake,
+.icon-img-zpt,
+.icon-snack-y,
+.icon-snack,
+.icon-dessert-y,
+.icon-dessert,
+.icon-ico-aggs,
+.icon-drinks-y,
+.icon-drinks,
+.icon-chat,
+.icon-b-mail,
+.icon-ico-cherry,
+.icon-b-phone,
+.icon-b-time,
+.icon-bars,
+.icon-ico-djem,
+.icon-sauce-y,
+.icon-sauce {
+  display: inline-block;
+  background: url('../img/sprite.png') no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+}
+.icon-cake-y {
+  background-position: -3px 0px;
+  width: 78px;
+  height: 48px;
+}
+.icon-cake {
+  background-position: -3px -51px;
+  width: 78px;
+  height: 48px;
+}
+.icon-img-zpt {
+  background-position: -3px -102px;
+  width: 57px;
+  height: 50px;
+}
+.icon-snack-y {
+  background-position: -3px -155px;
+  width: 55px;
+  height: 55px;
+}
+.icon-snack {
+  background-position: -3px -213px;
+  width: 55px;
+  height: 55px;
+}
+.icon-dessert-y {
+  background-position: -3px -271px;
+  width: 43px;
+  height: 61px;
+}
+.icon-dessert {
+  background-position: -3px -335px;
+  width: 43px;
+  height: 61px;
+}
+.icon-ico-aggs {
+  background-position: -3px -399px;
+  width: 40px;
+  height: 26px;
+}
+.icon-drinks-y {
+  background-position: -3px -428px;
+  width: 36px;
+  height: 62px;
+}
+.icon-drinks {
+  background-position: -42px -428px;
+  width: 36px;
+  height: 62px;
+}
+.icon-chat {
+  background-position: -3px -493px;
+  width: 35px;
+  height: 23px;
+}
+.icon-b-mail {
+  background-position: -49px -271px;
+  width: 27px;
+  height: 20px;
+}
+.icon-ico-cherry {
+  background-position: -49px -294px;
+  width: 26px;
+  height: 26px;
+}
+.icon-b-phone {
+  background-position: -49px -323px;
+  width: 25px;
+  height: 25px;
+}
+.icon-b-time {
+  background-position: -49px -351px;
+  width: 25px;
+  height: 25px;
+}
+.icon-bars {
+  background-position: -49px -379px;
+  width: 25px;
+  height: 22px;
+}
+.icon-ico-djem {
+  background-position: -41px -493px;
+  width: 24px;
+  height: 26px;
+}
+.icon-sauce-y {
+  background-position: -3px -519px;
+  width: 22px;
+  height: 62px;
+}
+.icon-sauce {
+  background-position: -28px -522px;
+  width: 22px;
+  height: 62px;
+}

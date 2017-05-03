@@ -1,0 +1,195 @@
+@import "../variables";
+
+.transition(@par){
+  transition: @par .3s;
+}
+
+.wrap-callbec{
+  display: inline-block;
+  float: left;
+}
+.callbec--pad{
+  padding-top: 70px;
+}
+.callbec__bonus{
+  display: inline-block;
+  color:@whitet;
+  font-family: @glight;
+  font-size: @f10;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid @grey;
+  text-align: center;
+  transition: color .3s;
+  &:hover,
+  &:focus,
+  &:active{
+    color: @yel;
+    text-decoration: none;
+  }
+}
+.callbec__number{
+  display: block;
+  color: @yel;
+  font-family: @gmed;
+  font-size: @f16;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  .transition(color);
+  &:hover,
+  &:focus,
+  &:active{
+    color: @whitet;
+    text-decoration: none;
+  }
+}
+.callbec__clock{
+  color: @whitet;
+  padding-bottom: 45px;
+}
+.btn-bloc{
+  position: relative;
+}
+.btOtziv{
+  background: transparent;
+  width: 140px;
+  height: 34px;
+  border: 2px solid @yebl;
+  color: @whitet;
+  font-size: @f14;
+  font-family: @gmed;
+  margin: 2px;
+  padding: 0;
+  .transition(color);
+  i{
+    display: inline-block;
+    padding: 3px 10px 4px 0;
+    font-size: @f18;
+    .transition(color);
+  }
+  &:hover,
+  &:active,
+  &:focus{
+    color: @yel;
+    text-decoration: none;
+    i{
+      color: @whitet;
+    }
+  }
+}
+.btn-bloc__wrapBtn{
+  display: inline-block;
+  border: 1px solid @white;
+  z-index: 2;
+}
+.btnOtz{
+  position: absolute;
+  width: 147px;
+  height: 40px;
+  border: 1px solid @borderC;
+  top: 4px;
+  left: 8px;
+  z-index: -1;
+}
+.bloc-logo{
+  display: block;
+  text-align: center;
+  margin: 14px auto 20px;
+}
+.menu{
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.menu__li{
+  display: inline-block;
+  padding-right: 45px;
+  a{
+    text-transform: uppercase;
+    color: @whitet;
+    font-family: @gmed;
+    font-size: @f14;
+    .transition(color);
+    &:last-child{
+      padding-right: 0;
+    }
+    &:hover,
+    &:active,
+    &:focus{
+      color: @yel;
+      text-decoration: none;
+    }
+  }
+}
+.btn-bloc--mod{
+  width: 200px;
+  margin: 0 auto 78px;
+  display: block;
+  text-align: center;
+}
+.btOtziv--zacaz{
+  color: @yel;
+  width: 184px;
+  height: 34px;
+  &:hover{
+    color: @whitet;
+  }
+}
+.btnOtz--zacaz{
+  left: 8px;
+  height: 40px;
+  width: 192px;
+}
+.btn-bloc--enter{
+  width: 184px;
+  margin: 80px auto 15px;
+  text-align: right;
+}
+.btOtziv--enter{
+  .btOtziv--zacaz;
+  i{
+    padding: 3px 5px 4px 0;
+    font-size: 12px;
+    color: @white;
+  }
+  &:hover{
+    i{
+      color: @white;
+    }
+  }
+}
+.btnOtz--enter{
+  top: 4px;
+  left: 3px;
+  width: 191px;
+}
+.blocSocial{
+  text-align: center;
+  margin-bottom: 20px;
+  div{
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 15px;
+    &:last-child{
+      padding-right: 0;
+    }
+    i{
+      color: @colSoc;
+      font-size: @f16;
+      .transition(color);
+    }
+    &:hover{
+      i{
+        color: @yel;
+      }
+    }
+  }
+}
+.btn-bloc--bars{
+  padding-top: 0;
+}
+
+
+

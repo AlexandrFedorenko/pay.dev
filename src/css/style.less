@@ -1,0 +1,73 @@
+@import "variables";
+@import "sprite";
+// Bootstrap Components
+
+@import "@{bootstrap}variables";
+@import "@{bootstrap}mixins";
+@import "@{bootstrap}normalize";
+@import "@{bootstrap}scaffolding";
+@import "@{bootstrap}grid";
+@import "@{bootstrap}type";
+@import "@{bootstrap}responsive-utilities";
+@import "@{bootstrap}utilities";
+
+
+html, body {
+    height: 100%;
+}
+
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    outline: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.hidden{
+    display: none;
+}
+@media screen and (min-width: 1920px){
+    .bg{
+        background-size: cover;
+    }
+}
+
+
+
+/* Vendor libs import
+==============================*/
+@import "../libs/fontawesom/css/font-awesome.css";
+
+
+
+/* Project Elements
+==============================*/
+@import "elements";
+
+
+
+/* Pages import
+==============================*/
+@import "pages/header";
+@import "pages/home";
+@import "pages/footer";
+
+
+
+

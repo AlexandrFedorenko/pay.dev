@@ -1,0 +1,219 @@
+/* font-family: "TMVinograd-Filled"; */
+@font-face {
+  font-family: "tFi";
+  src: url("fonts/vino/TMVinograd-Filled.otf"), url("fonts/vino/TMVinograd-Filled.ttf");
+}
+/* font-family: "TMVinograd-Filled"; */
+@font-face {
+  font-family: "tFiOb";
+  src: url("fonts/vino/TMVinograd-FilledOblique.otf"), url("fonts/vino/TMVinograd-FilledOblique.ttf");
+}
+/* font-family: "GothamProBold"; */
+@font-face {
+  font-family: "gbold";
+  src: url("fonts/GothamProBold.eot"), url("fonts/GothamProBold.ttf"), url("fonts/GothamProBold.woff");
+}
+/* font-family: "GothamProRegular"; */
+@font-face {
+  font-family: "gbold";
+  src: url("fonts/GothamProRegular.eot"), url("fonts/GothamProRegular.ttf"), url("fonts/GothamProRegular.woff");
+}
+/* font-family: "GothamProLight"; */
+@font-face {
+  font-family: "glight";
+  src: url("fonts/GothamProLight.eot"), url("fonts/GothamProLight.ttf"), url("fonts/GothamProLight.woff");
+}
+/* font-family: "GothamProLight"; */
+@font-face {
+  font-family: "gmed";
+  src: url("fonts/GothamProMedium.eot"), url("fonts/GothamProMedium.ttf"), url("fonts/GothamProMedium.woff");
+}
+.wrap-callbec {
+  display: inline-block;
+  float: left;
+}
+.callbec--pad {
+  padding-top: 70px;
+}
+.callbec__bonus {
+  display: inline-block;
+  color: white;
+  font-family: "glight", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #737373;
+  text-align: center;
+  transition: color .3s;
+}
+.callbec__bonus:hover,
+.callbec__bonus:focus,
+.callbec__bonus:active {
+  color: #e5c02f;
+  text-decoration: none;
+}
+.callbec__number {
+  display: block;
+  color: #e5c02f;
+  font-family: "gmed", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  transition: color 0.3s;
+}
+.callbec__number:hover,
+.callbec__number:focus,
+.callbec__number:active {
+  color: white;
+  text-decoration: none;
+}
+.callbec__clock {
+  color: white;
+  padding-bottom: 45px;
+}
+.btn-bloc {
+  position: relative;
+}
+.btOtziv {
+  background: transparent;
+  width: 140px;
+  height: 34px;
+  border: 2px solid #e5c02f;
+  color: white;
+  font-size: 14px;
+  font-family: "gmed", sans-serif;
+  margin: 2px;
+  padding: 0;
+  transition: color 0.3s;
+}
+.btOtziv i {
+  display: inline-block;
+  padding: 3px 10px 4px 0;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.btOtziv:hover,
+.btOtziv:active,
+.btOtziv:focus {
+  color: #e5c02f;
+  text-decoration: none;
+}
+.btOtziv:hover i,
+.btOtziv:active i,
+.btOtziv:focus i {
+  color: white;
+}
+.btn-bloc__wrapBtn {
+  display: inline-block;
+  border: 1px solid white;
+  z-index: 2;
+}
+.btnOtz {
+  position: absolute;
+  width: 147px;
+  height: 40px;
+  border: 1px solid #a4a4a4;
+  top: 4px;
+  left: 8px;
+  z-index: -1;
+}
+.bloc-logo {
+  display: block;
+  text-align: center;
+  margin: 14px auto 20px;
+}
+.menu {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.menu__li {
+  display: inline-block;
+  padding-right: 45px;
+}
+.menu__li a {
+  text-transform: uppercase;
+  color: white;
+  font-family: "gmed", sans-serif;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.menu__li a:last-child {
+  padding-right: 0;
+}
+.menu__li a:hover,
+.menu__li a:active,
+.menu__li a:focus {
+  color: #e5c02f;
+  text-decoration: none;
+}
+.btn-bloc--mod {
+  width: 200px;
+  margin: 0 auto 78px;
+  display: block;
+  text-align: center;
+}
+.btOtziv--zacaz {
+  color: #e5c02f;
+  width: 184px;
+  height: 34px;
+}
+.btOtziv--zacaz:hover {
+  color: white;
+}
+.btnOtz--zacaz {
+  left: 8px;
+  height: 40px;
+  width: 192px;
+}
+.btn-bloc--enter {
+  width: 184px;
+  margin: 80px auto 15px;
+  text-align: right;
+}
+.btOtziv--enter {
+  color: #e5c02f;
+  width: 184px;
+  height: 34px;
+}
+.btOtziv--enter:hover {
+  color: white;
+}
+.btOtziv--enter i {
+  padding: 3px 5px 4px 0;
+  font-size: 12px;
+  color: white;
+}
+.btOtziv--enter:hover i {
+  color: white;
+}
+.btnOtz--enter {
+  top: 4px;
+  left: 3px;
+  width: 191px;
+}
+.blocSocial {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.blocSocial div {
+  display: inline-block;
+  cursor: pointer;
+  padding-right: 15px;
+}
+.blocSocial div:last-child {
+  padding-right: 0;
+}
+.blocSocial div i {
+  color: #959595;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.blocSocial div:hover i {
+  color: #e5c02f;
+}
+.btn-bloc--bars {
+  padding-top: 0;
+}
