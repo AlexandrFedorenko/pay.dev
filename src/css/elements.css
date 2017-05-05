@@ -110,3 +110,25 @@
   width: 200px!important;
   margin: 0 auto!important;
 }
+.mfp-close--mod {
+  background: url("../img/cloced.png") no-repeat !important;
+  width: 44px;
+  height: 44px;
+  display: block!important;
+  position: absolute;
+  top: -39px;
+  right: -44px;
+}
+.mfp-close--mod:active,
+.mfp-close--mod:focus {
+  top: -39px;
+  right: -44px;
+}
+.error {
+  color: red;
+  border: 1px solid red;
+}
+.mess-error,
+.name-error {
+  display: none;
+}

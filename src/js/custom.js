@@ -86,6 +86,34 @@ $(function () {
         focus: '#name'
     });
 
+//validate popup otziv
+    $("#myform").validate({
+
+        rules:{
+
+            nameOtz:{
+                required: true
+            },
+
+            mess:{
+                required: true,
+            }
+        },
+
+        messages:{
+
+            nameOtz:{
+                required: "",
+            },
+
+            mess:{
+                required: "",
+            },
+
+        }
+
+    });
+
 });
 //preloader
 $(window).load(function () {
