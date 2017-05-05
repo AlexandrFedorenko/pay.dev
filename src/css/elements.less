@@ -1,0 +1,85 @@
+@import "variables";
+//popup otziv
+
+.mfp-container{
+  top: 25%;
+}
+.mfp-content{
+  max-width: 660px;
+}
+.white-popup{
+  background: url("../img/bg-popup.jpg")no-repeat top center;
+  background-size: cover;
+  height: 430px;
+}
+.otzPopup__tittle{
+  color: @yel;
+  font-family: @tFi;
+  font-size: @f50;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+.otzPopup__text{
+  text-align: center;
+  color: @colorPopupWhit;
+  font-size: @f14;
+  font-family: @greg;
+  padding-bottom: 20px;
+  max-width: 330px;
+  margin: 0 auto;
+}
+.inpName{
+  max-width: 375px;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto 15px;
+  display: block;
+  border: 1px solid @white;
+  background: transparent url("../img/avatar.png")no-repeat 20px center;
+  text-align: center;
+  font-family: @glight;
+  color: @colorPopupWhit;
+  font-size: @f14;
+  &:focus,
+  &:active{
+    border: 1px solid @yel;
+  }
+}
+.inpText{
+  max-width: 375px;
+  width: 100%;
+  height: 120px;
+  margin: 0 auto 25px;
+  display: block;
+  border: 1px solid @white;
+  text-align: center;
+  font-family: @glight;
+  color: @colorPopupWhit;
+  font-size: @f14;
+  background: transparent;
+  resize: none;
+  padding-top: 44px;
+  &:focus,
+  &:active{
+    border: 1px solid @yel;
+  }
+}
+.btn-bloc--popupOtz{
+  width: 190px;
+  display: block;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+.btn-bloc--popupOtz .btnOtz--popupOtz{
+  z-index: 0;
+}
+.inpSub{
+  padding-top: 0!important;
+}
+.btn-bloc--otz2{
+  display: block!important;
+  text-align: center!important;
+  width: 200px!important;
+  margin: 0 auto!important;
+}

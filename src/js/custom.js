@@ -80,7 +80,11 @@ $(function () {
         horizrailenabled:false
     });
 
-
+//popup otziv
+    $('.popup-with-form').magnificPopup({
+        type: 'inline',
+        focus: '#name'
+    });
 
 });
 //preloader

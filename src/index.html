@@ -2707,7 +2707,7 @@
             <div class="col-md-9 col-md-offset-2 textCentr">
                 <div class="btn-bloc btn-bloc--otz">
                     <div class="btn-bloc__wrapBtn">
-                        <a href="#" class="btOtziv btOtziv--enter">Написать отзыв</a>
+                        <a href="#form-popup" class="btOtziv btOtziv--enter popup-with-form">Написать отзыв</a>
                     </div>
                     <div class="btnOtz btnOtz--otz"></div>
                 </div>
@@ -2774,7 +2774,29 @@
 </footer>
 
 
-<div class="hidden"></div>
+<div class="hidden">
+    <div id="form-popup" class="white-popup mfp-hide">
+        <form id="myform" class="otz" action="#">
+            <p class="otzPopup__tittle">Оставить отзыв</p>
+            <p class="otzPopup__text">
+                Если вы хотите нас похвалить или поругать, то
+                оставьте ваш комментарий ниже:
+            </p>
+            <div><input id="name" class="inpName" type="text" placeholder="Введите Ваше имя" required /></div>
+            <div><textarea name="mess" id="mess" class="inpText" cols="30" rows="10" placeholder="Написать Комментарий"></textarea></div>
+            <div class="btn-bloc btn-bloc--otz btn-bloc--otz2">
+                <div class="btn-bloc__wrapBtn">
+                    <input class="inpSub btOtziv  btOtziv&#45;&#45;popupOtz" type="submit" value="Оставить отзыв">
+                </div>
+            </div>
+        </form>
+        <div class="btn-bloc btn-bloc--otz btn-bloc--otz2">
+            <div class="btn-bloc__wrapBtn">
+                <button title="Close (Esc)" type="button" class="mfp-close mfp-close--mod">×</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="loader">
     <div class="loader_inner"></div>
@@ -2794,6 +2816,7 @@
 <script src="libs/slick/slick.min.js"></script>
 <script src="../bower_components/bootstrap/js/tab.js"></script>
 <script src="libs/nisescroll/jquery.nicescroll.min.js"></script>
+<script src="../bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 <script src="js/custom.js"></script>
 
 
