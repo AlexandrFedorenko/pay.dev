@@ -1,0 +1,77 @@
+@import "../variables";
+
+.slick-slide img{
+  width: 100%;
+}
+.slick-prev::before, .slick-next::before{
+  font-size: 29px;
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 4px 6px;
+}
+.slick-prev:hover::before{
+  color: @yel;
+  border-color:@yel ;
+  opacity: 1;
+}
+.slick-next:hover::before{
+  color: @yel;
+  border-color:@yel ;
+  opacity: 1;
+}
+.slick-prev, .slick-next{
+  height: 55px;
+  width: 46px;
+}
+.slick-next {
+  right: 44%;
+  top: 450px;
+
+}
+.slick-prev {
+  left: 44%;
+  top: 450px;
+}
+.slick-prev:hover, .slick-next:hover, .slick-prev:focus, .slick-next:focus {
+  outline: none;
+  border-color:@yel ;
+  color: @yel;
+}
+@media screen and (max-width: 1200px){
+  .slick-prev,
+  .slick-next{
+    top: 350px;
+  }
+}
+@media all and (max-width: 992px){
+  .mainSlider{
+    margin-top: 100px;
+  }
+  .slick-next{
+    right: 35%;
+  }
+  .slick-prev{
+    left: 35%;
+  }
+}
+@media all and (max-width: 768px){
+  .slick-next {
+    right: 20px;
+    top: 320px;
+  }
+  .slick-prev{
+    left: 20px;
+    top: 320px;
+  }
+}
+@media all and (max-width: 468px){
+  .slick-next,
+  .slick-prev{
+    top: 200px;
+  }
+}
+@media all and (max-width: 420px){
+  .mainSlider{
+    display: none;
+  }
+}

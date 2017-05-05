@@ -1,0 +1,126 @@
+/* font-family: "TMVinograd-Filled"; */
+@font-face {
+  font-family: "tFi";
+  src: url("fonts/vino/TMVinograd-Filled.otf"), url("fonts/vino/TMVinograd-Filled.ttf");
+}
+/* font-family: "TMVinograd-Filled"; */
+@font-face {
+  font-family: "tFiOb";
+  src: url("fonts/vino/TMVinograd-FilledOblique.otf"), url("fonts/vino/TMVinograd-FilledOblique.ttf");
+}
+/* font-family: "GothamProBold"; */
+@font-face {
+  font-family: "gbold";
+  src: url("fonts/GothamProBold.eot"), url("fonts/GothamProBold.ttf"), url("fonts/GothamProBold.woff");
+}
+/* font-family: "GothamProRegular"; */
+@font-face {
+  font-family: "greg";
+  src: url("fonts/GothamProRegular.eot"), url("fonts/GothamProRegular.ttf"), url("fonts/GothamProRegular.woff");
+}
+/* font-family: "GothamProLight"; */
+@font-face {
+  font-family: "glight";
+  src: url("fonts/GothamProLight.eot"), url("fonts/GothamProLight.ttf"), url("fonts/GothamProLight.woff");
+}
+/* font-family: "GothamProLight"; */
+@font-face {
+  font-family: "gmed";
+  src: url("fonts/GothamProMedium.eot"), url("fonts/GothamProMedium.ttf"), url("fonts/GothamProMedium.woff");
+}
+.wrapFooter {
+  padding-top: 125px;
+}
+.info--style {
+  padding-bottom: 30px;
+}
+.info--style .info__tittle {
+  font-family: "gmed", sans-serif;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #e5c02f;
+  font-size: 18px;
+}
+.info--style li a {
+  font-family: "gmed", sans-serif;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: white;
+  font-size: 14px;
+  transition: color .2s;
+}
+.info--style li a:hover,
+.info--style li a:active,
+.info--style li a:focus {
+  color: #e5c02f;
+  text-decoration: none;
+}
+.contact {
+  max-width: 250px;
+  margin: 0 auto;
+}
+.contact li {
+  padding-bottom: 20px;
+  font-family: "gmed", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.contact li:last-child {
+  padding-bottom: 0;
+}
+.contact li div {
+  margin-right: 15px;
+  position: relative;
+  top: 15px;
+}
+.contact li .icon-b-phone,
+.contact li .icon-b-mail {
+  top: 6px;
+}
+.contact li span {
+  display: block;
+  text-align: left;
+  width: 179px;
+  margin: 0 auto;
+  padding-left: 8px;
+}
+.contact li a {
+  font-family: "gmed", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: color .2s;
+}
+.contact li a:hover {
+  text-decoration: none;
+  color: #e5c02f;
+}
+.contact .blocSocial {
+  margin-right: 0;
+  top: 0;
+  padding-bottom: 40px;
+}
+.contact .blocSocial div {
+  padding-right: 0;
+}
+@media screen and (max-width: 1200px) {
+  .contact {
+    float: right;
+  }
+  .contact li span {
+    text-align: center;
+  }
+}
+@media all and (max-width: 992px) {
+  .info--style {
+    text-align: center;
+  }
+  .contact {
+    float: none;
+    max-width: 180px;
+  }
+  .contact li span {
+    text-align: center;
+  }
+}

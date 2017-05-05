@@ -1,0 +1,71 @@
+@import "../variables";
+.tittleH1--pad{
+  padding-top: 70px;
+}
+.wrapPhoto{
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  background: @colorBgPhoto;
+}
+.otz__name{
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: @gmed;
+  text-transform: uppercase;
+  font-size: @f14;
+  color: @yel;
+  span{
+    color: @whitet;
+    font-size: @f10;
+  }
+}
+.otz__text{
+  max-width: 541px;
+  margin: 0 auto;
+  padding-top: 25px;
+  text-align: center;
+  font-family: @greg;
+  font-size: @f14;
+  color: @whitet;
+}
+.row--pad{
+  padding-bottom: 80px;
+}
+.textCentr{
+  text-align: center;
+}
+.btn-bloc--otz{
+  display: inline-block;
+}
+.btnOtz--otz{
+  position: absolute;
+  width: 191px;
+  height: 40px;
+  border: 1px solid #a4a4a4;
+  top: 4px;
+  left: 3px;
+  z-index: -1;
+}
+@media screen and (max-width: 1200px){
+  .otz__raz{
+    width: 80%;
+  }
+}
+@media all and (max-width: 992px){
+  .otz__name{
+    margin-bottom: 0;
+    padding-top: 20px;
+  }
+  .icon-img-zpt{
+    display: none;
+  }
+}
+@media all and (max-width: 768px){
+  .btn-bloc--otz .btnOtz--enter {
+    top: 4px;
+  }
+}

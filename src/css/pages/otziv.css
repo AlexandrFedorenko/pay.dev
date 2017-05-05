@@ -1,0 +1,100 @@
+/* font-family: "TMVinograd-Filled"; */
+@font-face {
+  font-family: "tFi";
+  src: url("fonts/vino/TMVinograd-Filled.otf"), url("fonts/vino/TMVinograd-Filled.ttf");
+}
+/* font-family: "TMVinograd-Filled"; */
+@font-face {
+  font-family: "tFiOb";
+  src: url("fonts/vino/TMVinograd-FilledOblique.otf"), url("fonts/vino/TMVinograd-FilledOblique.ttf");
+}
+/* font-family: "GothamProBold"; */
+@font-face {
+  font-family: "gbold";
+  src: url("fonts/GothamProBold.eot"), url("fonts/GothamProBold.ttf"), url("fonts/GothamProBold.woff");
+}
+/* font-family: "GothamProRegular"; */
+@font-face {
+  font-family: "greg";
+  src: url("fonts/GothamProRegular.eot"), url("fonts/GothamProRegular.ttf"), url("fonts/GothamProRegular.woff");
+}
+/* font-family: "GothamProLight"; */
+@font-face {
+  font-family: "glight";
+  src: url("fonts/GothamProLight.eot"), url("fonts/GothamProLight.ttf"), url("fonts/GothamProLight.woff");
+}
+/* font-family: "GothamProLight"; */
+@font-face {
+  font-family: "gmed";
+  src: url("fonts/GothamProMedium.eot"), url("fonts/GothamProMedium.ttf"), url("fonts/GothamProMedium.woff");
+}
+.tittleH1--pad {
+  padding-top: 70px;
+}
+.wrapPhoto {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  background: #c4c4c4;
+}
+.otz__name {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "gmed", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #e5c02f;
+}
+.otz__name span {
+  color: white;
+  font-size: 10px;
+}
+.otz__text {
+  max-width: 541px;
+  margin: 0 auto;
+  padding-top: 25px;
+  text-align: center;
+  font-family: "greg", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+.row--pad {
+  padding-bottom: 80px;
+}
+.textCentr {
+  text-align: center;
+}
+.btn-bloc--otz {
+  display: inline-block;
+}
+.btnOtz--otz {
+  position: absolute;
+  width: 191px;
+  height: 40px;
+  border: 1px solid #a4a4a4;
+  top: 4px;
+  left: 3px;
+  z-index: -1;
+}
+@media screen and (max-width: 1200px) {
+  .otz__raz {
+    width: 80%;
+  }
+}
+@media all and (max-width: 992px) {
+  .otz__name {
+    margin-bottom: 0;
+    padding-top: 20px;
+  }
+  .icon-img-zpt {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  .btn-bloc--otz .btnOtz--enter {
+    top: 4px;
+  }
+}

@@ -1,0 +1,235 @@
+@import "../variables";
+
+.menu--pad{
+  margin-top: 170px;
+}
+.tittleH1{
+  font-family: @tFi;
+  font-size: @f80;
+  color: #fefefe;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.nav-tabs{
+  text-align: center;
+}
+.nav-tabs > li{
+  float: none;
+  display: inline-block;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+ .wrap-itemNav > a{
+  margin: 0;
+  display: inline-block;
+  color: @whitet;
+  text-transform: uppercase;
+  font-family: @gmed;
+  font-size: @f14;
+  &:hover,
+  &:focus,
+  &:active{
+    color: @yel;
+  }
+}
+.nav-tabs > li{
+  margin-bottom: 30px;
+  margin-right: 115px;
+  &:first-child{
+    margin-left: 60px;
+  }
+}
+.nav-tabs > li.active > .wrap-itemNav > a, .nav-tabs > li.active > .wrap-itemNav > a:hover, .nav-tabs > li.active > .wrap-itemNav > a:focus{
+  border-color: transparent;
+  color: @yel;
+  text-decoration: none;
+  .icon-cake{
+    background-position: -3px -0px;
+  }
+  .icon-snack{
+    background-position: -3px -155px;
+  }
+  .icon-dessert{
+    background-position: -3px -271px;
+  }
+  .icon-drinks{
+    background-position: -3px -428px;
+  }
+  .icon-sauce{
+    background-position: -3px -519px;
+  }
+}
+.nav-tabs > li.active > .wrap-itemNav > .icon-cake ,.nav-tabs > li.active > .wrap-itemNav > .icon-cake:hover{
+  background-position: -3px -0px;
+}
+.wrap-itemNav{
+  cursor: pointer;
+  .icon-cake,
+  .icon-snack,
+  .icon-dessert,
+  .icon-drinks,
+  .icon-sauce{
+    display: block;
+    margin: 0 auto 10px;
+  }
+  &:hover{
+    .icon-cake{
+      background-position: -3px -0px;
+    }
+    .icon-snack{
+      background-position: -3px -155px;
+    }
+    .icon-dessert{
+      background-position: -3px -271px;
+    }
+    .icon-drinks{
+      background-position: -3px -428px;
+    }
+    .icon-sauce{
+      background-position: -3px -519px;
+    }
+    a{
+      color: @yel;
+      text-decoration: none;
+    }
+  }
+}
+.item-menu__tittle{
+  color: @colorTittleMenu;
+  font-family: @tFi;
+  font-size: @f36;
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 30px;
+}
+.item-menu__img{
+  box-shadow: 16px 12px 35px rgba(0, 0, 0, 0.2), 25px 17px 40px rgba(0, 0, 0, 0.2), -1px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.wr-itemMenu{
+  position: relative;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.wrapImgItem{
+  position: relative;
+  padding-bottom: 35px;
+}
+.item-menu__hit{
+  position: absolute;
+  top: -20px;
+  right: 6px;
+}
+.item-menu__text{
+  font-family: @greg;
+  font-size: @f14;
+  color: @whitet;
+  text-align: center;
+  margin-bottom: 0;
+}
+.item-menu__raz{
+  width: 80%;
+}
+.item-menu__ul{
+  width: 290px;
+  margin: 0 auto;
+  text-align: left;
+  li{
+    padding-right: 10px;
+    &:last-child{
+      padding-right: 0;
+    }
+    div{
+      position: relative;
+      top: 5px;
+      margin-right: 7px;
+    }
+    display: inline-block;
+    font-family: @gmed;
+    font-size: @f14;
+    color: @white;
+  }
+}
+.wrap-btItem{
+  width:290px;
+  clear: both;
+  text-align: center;
+  margin: 0 auto;
+}
+.btn-bloc--item{
+  margin-top: 30px;
+  display: inline-block;
+  span{
+    border-left: 1px solid @white;
+    margin-left: 8px;
+    padding-left: 8px;
+  }
+  .btOtziv--enter{
+    width: 110px;
+    color: @whitet;
+    font-family: @gmed;
+    font-size: @f10;
+    padding-top: 8px;
+  }
+  .btnOtz--enter{
+    top: 4px;
+    left: 3px;
+    width: 117px;
+  }
+}
+.btn-bloc--right{
+  float: right;
+}
+.btn-bloc--left{
+  float: left;
+}
+.tab-content{
+  max-height: 1100px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.overflo{
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 1200px){
+  .nav-tabs > li:last-child{
+    margin-right: 0;
+  }
+  .nav-tabs > li:first-child {
+    margin-left: 0;
+  }
+  .item-menu__tittle{
+    font-size: 26px;
+  }
+}
+@media all and (max-width: 992px){
+  .nav-tabs > li{
+    margin-right: 50px;
+  }
+  .item-menu{
+    margin-bottom: 50px;
+  }
+  .item-menu__ul li{
+    padding-right: 10px;
+  }
+  .item-menu__tittle{
+    padding-bottom: 0;
+  }
+}
+@media all and (max-width: 468px){
+  .nav-tabs > li {
+    margin-right: 38px;
+  }
+  .tab-content{
+    overflow-y: auto;
+  }
+}
