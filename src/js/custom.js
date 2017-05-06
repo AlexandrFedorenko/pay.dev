@@ -16,7 +16,7 @@ $(function () {
     } catch (err) {
 
     }
-    ;
+    
 //dragstart-none
     $("img, a").on("dragstart", function (event) {
         event.preventDefault();
@@ -36,16 +36,7 @@ $(function () {
         $("#hoverBars").click(function () {
             $(".wrapHoverBars").slideToggle();
         });
-    }
-
-    //slick slider index
-    $('.mainSlider').slick({
-        dots:false,
-        arrows:true,
-        infinite:true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    })
+    }   
 
     //tabs
     $('#myTab a:first').tab('show');

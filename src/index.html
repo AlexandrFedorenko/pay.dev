@@ -6,7 +6,7 @@
 <!--[if IE 8]>
 <html lang="ru" class="lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
+<html class="no-js" lang="ru">
 <!--<![endif]-->
 <head>
     <meta charset="utf-8"/>
@@ -2735,7 +2735,7 @@
                         <li class="info__tittle">пользователям</li>
                         <li><a href="#">Пользовательское соглашение</a></li>
                         <li><a href="#">личный кабинет</a></li>
-                        <li><a href="#">оставить отзыв</a></li>
+                        <li><a href="#form-popup">оставить отзыв</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -2849,6 +2849,16 @@
 <script src="../bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 <script src="../bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="js/custom.js"></script>
+<script>
+    //slick slider index
+    $('.mainSlider').slick({
+        dots:false,
+        arrows:true,
+        infinite:true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+</script>
 
 
 
