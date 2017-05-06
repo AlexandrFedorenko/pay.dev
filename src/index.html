@@ -80,7 +80,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="btn-bloc btn-bloc--enter">
                         <div class="btn-bloc__wrapBtn">
-                            <a href="#" class="btOtziv btOtziv--enter"><i class="fa fa-user-o" aria-hidden="true"></i>Войти
+                            <a href="#form-popup2" class="btOtziv btOtziv--enter popup-with-form2"><i class="fa fa-user-o" aria-hidden="true"></i>Войти
                                 / Регистрация</a>
                         </div>
                         <div class="btnOtz btnOtz--enter"></div>
@@ -2775,6 +2775,7 @@
 
 
 <div class="hidden">
+    <!--modal otziv-->
     <div id="form-popup" class="white-popup mfp-hide">
         <form id="myform" class="otz" action="#">
             <p class="otzPopup__tittle">Оставить отзыв</p>
@@ -2792,6 +2793,39 @@
         </form>
             <button title="Close (Esc)" type="button" class="mfp-close mfp-close--mod"></button>
     </div>
+    <!---->
+
+    <!--modal registration-->
+    <div id="form-popup2" class="white-popup mfp-hide">
+        <form id="myform2" class="registration" action="#">
+            <p class="otzPopup__tittle">Авторизация</p>
+            <p class="otzPopup__text">
+                Введите ваши регистрационные данные для входа в
+                ваш личный кабинет.
+            </p>
+            <div><input id="login" name="login" class="inpLogin" type="text" placeholder="Ваш e-mail или логин" required /></div>
+            <div><input id="password" name="pass" class="inpPass" type="password" placeholder="Ваш пароль" required /></div>
+            <div class="btn-bloc btn-bloc--regis">
+                <a href="#" class="btn-bloc__registr">Регистрация</a>
+                <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--bg">
+                    <input class="inpSub inpEntr btOtziv  btOtziv&#45;&#45;popupOtz" type="submit" value="Войти">
+                </div>
+            </div>
+
+            <a href="#" class="registration__rememberPass">Забыли пароль?</a>
+            <p class="registration__enterSoc">Войти через:</p>
+            <div class="blocSocial">
+                <div class="fe"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                <div class="tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                <div class="vk"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
+                <div class="in"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                <div class="li"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+            </div>
+        </form>
+        <button title="Close (Esc)" type="button" class="mfp-close mfp-close--mod"></button>
+    </div>
+    <!---->
+
 </div>
 
 <div class="loader">

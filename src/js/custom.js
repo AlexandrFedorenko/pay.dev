@@ -86,6 +86,12 @@ $(function () {
         focus: '#name'
     });
 
+    //popup registration
+    $('.popup-with-form2').magnificPopup({
+        type: 'inline',
+        focus: '#login'
+    });
+
 //validate popup otziv
     $("#myform").validate({
 
@@ -96,19 +102,47 @@ $(function () {
             },
 
             mess:{
-                required: true,
+                required: true
             }
         },
 
         messages:{
 
             nameOtz:{
-                required: "",
+                required: ""
             },
 
             mess:{
-                required: "",
+                required: ""
+            }
+
+        }
+
+    });
+
+    //validate popup registration
+    $("#myform2").validate({
+
+        rules:{
+
+            login:{
+                required: true
             },
+
+            pass:{
+                required: true
+            }
+        },
+
+        messages:{
+
+            login:{
+                required: ""
+            },
+
+            pass:{
+                required: ""
+            }
 
         }
 

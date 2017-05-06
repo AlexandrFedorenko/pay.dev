@@ -2843,7 +2843,7 @@ img.mfp-img {
 /* Project Elements
 ==============================*/
 .mfp-container {
-  top: 25%;
+  top: 5%;
 }
 .mfp-content {
   max-width: 660px;
@@ -2939,12 +2939,93 @@ img.mfp-img {
   right: -44px;
 }
 .error {
-  color: red;
   border: 1px solid red;
 }
-.mess-error,
-.name-error {
-  display: none;
+#mess-error,
+#name-error,
+#login-error,
+#pass-error {
+  display: none!important;
+}
+@media all and (max-width: 760px) {
+  .mfp-close-btn-in .mfp-close {
+    right: 0;
+    top: -47px;
+  }
+}
+@media all and (max-width: 360px) {
+  .inpName,
+  .inpText {
+    width: 90%;
+  }
+  .otzPopup__tittle {
+    font-size: 34px;
+  }
+}
+.inpLogin {
+  max-width: 375px;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto 15px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent url("../img/avatar.png") no-repeat 20px center;
+  text-align: center;
+  font-family: "glight", sans-serif;
+  color: #fefefe;
+  font-size: 14px;
+}
+.inpLogin:focus,
+.inpLogin:active {
+  border-bottom: 1px solid #e5c02f;
+}
+.inpPass {
+  max-width: 375px;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto 15px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent url("../img/avatar.png") no-repeat 20px center;
+  text-align: center;
+  font-family: "glight", sans-serif;
+  color: #fefefe;
+  font-size: 14px;
+  background: transparent url("../img/locked-padlock.png") no-repeat 20px center;
+}
+.inpPass:focus,
+.inpPass:active {
+  border-bottom: 1px solid #e5c02f;
+}
+#myform2 .error {
+  border: none;
+  border-bottom: 1px solid red;
+}
+.btn-bloc--regis {
+  max-width: 380px;
+  clear: both;
+  margin: 0 auto;
+}
+.btn-bloc__registr {
+  float: left;
+  color: #e5c02f;
+  font-size: 14px;
+  font-family: "gmed", sans-serif;
+  transition: color .2s;
+}
+.btn-bloc__registr:hover,
+.btn-bloc__registr:active,
+.btn-bloc__registr:focus {
+  color: white;
+  text-decoration: none;
+}
+.btn-bloc__wrapBtn--bg {
+  float: right;
+}
+.inpEntr {
+  background: url("../img/bg-line.png") no-repeat;
 }
 /* Pages import
 ==============================*/
