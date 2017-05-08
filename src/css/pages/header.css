@@ -11,22 +11,22 @@
 /* font-family: "GothamProBold"; */
 @font-face {
   font-family: "gbold";
-  src: url("fonts/GothamProBold.eot"), url("fonts/GothamProBold.ttf"), url("fonts/GothamProBold.woff");
+  src: url("fonts/GothamProBold.ttf"), url("fonts/GothamProBold.woff");
 }
 /* font-family: "GothamProRegular"; */
 @font-face {
   font-family: "greg";
-  src: url("fonts/GothamProRegular.eot"), url("fonts/GothamProRegular.ttf"), url("fonts/GothamProRegular.woff");
+  src: url("fonts/GothamProRegular.ttf"), url("fonts/GothamProRegular.woff");
 }
 /* font-family: "GothamProLight"; */
 @font-face {
   font-family: "glight";
-  src: url("fonts/GothamProLight.eot"), url("fonts/GothamProLight.ttf"), url("fonts/GothamProLight.woff");
+  src: url("fonts/GothamProLight.ttf"), url("fonts/GothamProLight.woff");
 }
 /* font-family: "GothamProLight"; */
 @font-face {
   font-family: "gmed";
-  src: url("fonts/GothamProMedium.eot"), url("fonts/GothamProMedium.ttf"), url("fonts/GothamProMedium.woff");
+  src: url("fonts/GothamProMedium.ttf"), url("fonts/GothamProMedium.woff");
 }
 .wrap-callbec {
   display: inline-block;

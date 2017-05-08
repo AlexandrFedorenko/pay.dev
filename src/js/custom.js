@@ -41,15 +41,15 @@ $(function () {
     //tabs
     $('#myTab a:first').tab('show');
 
-    //tabs scroll item
-    function doSomething() {
-        var winPos = $(window).scrollTop();
-        var headingPos = $('#myTab').offset().top;
-        if (winPos >= headingPos - 100) {
-            $(".tab-content").addClass("overflo");
-        }
-    }
-    $(window).scroll(doSomething);
+    // //tabs scroll item
+    // function doSomething() {
+    //     var winPos = $(window).scrollTop();
+    //     var headingPos = $('#myTab').offset().top;
+    //     if (winPos >= headingPos - 100) {
+    //         $(".tab-content").addClass("overflo");
+    //     }
+    // }
+    // $(window).scroll(doSomething);
 
    //scroll otziv
 
@@ -66,6 +66,7 @@ $(function () {
         $("html").niceScroll({
             cursorcolor: '#000000'
         });
+
     $(".tab-content").niceScroll({
         cursorcolor: '#000000',
         horizrailenabled:false
@@ -139,6 +140,67 @@ $(function () {
 
     });
 
+    //validate page registration
+    $("#register").validate({
+
+        rules:{
+
+            namePageReg:{
+                required: true
+            },
+
+            phone:{
+                required: true
+            },
+            emailReg:{
+                required: true
+            },
+            passReg:{
+                required: true
+            },
+            passLast:{
+                required: true,
+                equalTo: "#passReg"
+            }
+        },
+
+        messages:{
+
+            namePageReg:{
+                required: ""
+            },
+
+            phone:{
+                required: ""
+            },
+            emailReg:{
+                required: ""
+            },
+            passReg:{
+                required: ""
+            },
+            passLast:{
+                required: ""
+            }
+
+        }
+
+    });
+
+//scroll select
+    $(".jq-selectbox ul").niceScroll({
+        cursorcolor: '#c8c8c8',
+        borderRadius:"4px",
+        cursorwidth :"8px",
+        cursorheight: 13,
+        cursorminheight:13,
+        scrollspeed:100,
+        mousescrollstep:100,
+        cursorborder :"1px solid #e5c02f",
+        horizrailenabled:false
+    });
+
+
 });
 //preloader
 $(window).load(function () {
@@ -148,5 +210,8 @@ $(window).load(function () {
 
 });
 
-
+// masked input page register
+jQuery(function($){
+    $("#phone").mask("+7(999) 999 99 99",{placeholder:" "});
+});
 

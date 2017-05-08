@@ -11,58 +11,22 @@
 /* font-family: "GothamProBold"; */
 @font-face {
   font-family: "gbold";
-  src: url("fonts/GothamProBold.eot"), url("fonts/GothamProBold.ttf"), url("fonts/GothamProBold.woff");
+  src: url("fonts/GothamProBold.ttf"), url("fonts/GothamProBold.woff");
 }
 /* font-family: "GothamProRegular"; */
 @font-face {
   font-family: "greg";
-  src: url("fonts/GothamProRegular.eot"), url("fonts/GothamProRegular.ttf"), url("fonts/GothamProRegular.woff");
+  src: url("fonts/GothamProRegular.ttf"), url("fonts/GothamProRegular.woff");
 }
 /* font-family: "GothamProLight"; */
 @font-face {
   font-family: "glight";
-  src: url("fonts/GothamProLight.eot"), url("fonts/GothamProLight.ttf"), url("fonts/GothamProLight.woff");
+  src: url("fonts/GothamProLight.ttf"), url("fonts/GothamProLight.woff");
 }
 /* font-family: "GothamProLight"; */
 @font-face {
   font-family: "gmed";
-  src: url("fonts/GothamProMedium.eot"), url("fonts/GothamProMedium.ttf"), url("fonts/GothamProMedium.woff");
-}
-.form-001-envelope,
-.form-002-phone-call,
-.form-avregis,
-.form-next,
-.form-blockregister {
-  display: inline-block;
-  background: url('../../img/spriteRegister.png') no-repeat;
-  overflow: hidden;
-  text-indent: -9999px;
-  text-align: left;
-}
-.form-001-envelope {
-  background-position: -3px 0px;
-  width: 23px;
-  height: 17px;
-}
-.form-002-phone-call {
-  background-position: -3px -20px;
-  width: 19px;
-  height: 19px;
-}
-.form-avregis {
-  background-position: -3px -42px;
-  width: 15px;
-  height: 18px;
-}
-.form-next {
-  background-position: -3px -63px;
-  width: 15px;
-  height: 8px;
-}
-.form-blockregister {
-  background-position: -3px -74px;
-  width: 14px;
-  height: 18px;
+  src: url("fonts/GothamProMedium.ttf"), url("fonts/GothamProMedium.woff");
 }
 .tittleH {
   font-family: "tFi", sans-serif;
@@ -79,4 +43,267 @@
   text-align: center;
   margin-bottom: 0;
   padding-bottom: 45px;
+}
+.wrapRegisterForm {
+  background: url("../img/bg-form-register.jpg") no-repeat;
+  background-size: cover;
+  width: 680px;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+}
+.wrapRegisterForm__borderLight {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #5e191d;
+  padding: 10px;
+}
+.wrapRegisterForm__borderBold {
+  width: 100%;
+  height: 100%;
+  border: 4px solid rgba(94, 25, 29, 0.5);
+}
+.pageRegisterInp {
+  border: none;
+  border-bottom: 1px solid #5e191d;
+  color: #303136;
+  font-family: "glight", sans-serif;
+  font-size: 14px;
+  margin-bottom: 15px;
+  outline: none;
+}
+.pageRegisterInp:hover,
+.pageRegisterInp:active,
+.pageRegisterInp:focus {
+  border: none;
+  border-bottom: 1px solid #5e191d;
+}
+.pageRegisterInp::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+  text-align: center!important;
+}
+.pageRegisterInp:-moz-placeholder {
+  color: black;
+  opacity: 1;
+  text-align: center!important;
+}
+.pageRegisterInp::-moz-placeholder {
+  color: black;
+  opacity: 1;
+  text-align: center!important;
+}
+.pageRegisterInp:-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+  text-align: center!important;
+}
+.safari .pageRegisterInp,
+.safari .inpLogin,
+.safari .inpPass2,
+.safari .inpName,
+.safari .inpText {
+  text-align: left;
+  padding-left: 115px;
+}
+.namePageReg {
+  margin-top: 15px;
+  background: transparent url("../img/avatarReg.png") no-repeat 20px center;
+}
+.inpPhone {
+  background: transparent url("../img/phoneReg.png") no-repeat 20px center;
+}
+.inpEmail {
+  background: transparent url("../img/emailReg.png") no-repeat 20px center;
+}
+.inpPass,
+.inpPassLast {
+  background: transparent url("../img/passReg.png") no-repeat 20px center;
+}
+.wSelect__tittle {
+  font-size: 14px;
+  font-family: "glight", sans-serif;
+  color: black;
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+.wSelect {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.jq-selectbox__select {
+  border: none;
+  border-bottom-color: #5e191d;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  text-shadow: none;
+  font-size: 14px;
+  font-family: "glight", sans-serif;
+  color: black;
+}
+.selectRegister {
+  width: 110px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #5e191d;
+  margin-right: 30px;
+  outline: none;
+}
+.selectRegister:last-child {
+  margin-right: 0;
+}
+.jq-selectbox__trigger {
+  height: 50%;
+  top: 8px;
+  border-left: 1px solid #5e191d;
+}
+.jq-selectbox__trigger-arrow {
+  background: url("../img/nextArrow.png") no-repeat;
+  top: 5px;
+  border: none;
+  width: 15px;
+  height: 8px;
+  display: block;
+}
+.jq-selectbox__select-text {
+  width: 60px;
+}
+.jq-selectbox__select:hover,
+.jq-selectbox__select:active,
+.jq-selectbox__select:focus {
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.jq-selectbox__dropdown {
+  text-align: left;
+  bottom: -150px !important;
+}
+.jq-selectbox li.selected {
+  background-color: #e5c02f;
+}
+.jq-selectbox li:hover,
+.jq-selectbox li:active,
+.jq-selectbox li:focus {
+  background-color: #e5c02f;
+}
+.jq-selectbox ul {
+  border: 1px solid #e5c02f;
+  max-height: 150px;
+}
+.checkbox {
+  display: block;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.checkbox .wrapChe {
+  margin-bottom: 12px;
+}
+.checkbox .wrapChe label {
+  font-family: "glight", sans-serif;
+  font-size: 12px;
+  color: black;
+  cursor: pointer;
+}
+.jq-checkbox {
+  border: 1px solid #5e191d;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  background: url("../img/borderCheckbox.png") no-repeat center;
+}
+.jq-checkbox.checked .jq-checkbox__div {
+  background: url("../img/dotsCheckbox.png") no-repeat;
+  width: 4px;
+  height: 4px;
+  display: block;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+.btn-bloc__registr--color {
+  color: black;
+}
+.inpSubRegister {
+  color: black;
+  border: 2px solid rgba(94, 25, 29, 0.5);
+  width: 180px;
+}
+.btn-bloc__wrapBtn--border {
+  border: 1px solid #5e191d;
+  position: relative;
+}
+.borderWrapRegist {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  width: 187px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  z-index: -4;
+}
+.btn-bloc--pad {
+  padding-bottom: 25px;
+}
+#register .error {
+  border-bottom: 1px solid red;
+}
+#emailReg-error,
+#passReg-error,
+#namePageReg-error,
+#phone-error,
+#passLast-error {
+  display: none!important;
+}
+.safari .namePageReg {
+  text-align: center;
+}
+@media all and (max-width: 700px) {
+  .wrapRegisterForm {
+    width: 100%;
+  }
+}
+@media all and (max-width: 480px) {
+  .selectRegister {
+    margin: 0 auto 15px!important;
+    display: block!important;
+  }
+  .btn-bloc__registr--color {
+    float: none;
+    display: block;
+    text-align: center;
+    padding-left: 0;
+  }
+  .btn-bloc__wrapBtn--border {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 186px;
+  }
+  .safari .pageRegisterInp,
+  .safari .inpLogin,
+  .safari .inpPass2,
+  .safari .inpName,
+  .safari .inpText {
+    text-align: left;
+    padding-left: 55px;
+  }
+}
+@media all and (max-width: 360px) {
+  .inpPhone {
+    background: transparent url("../img/phoneReg.png") no-repeat 10px center;
+  }
+  .inpEmail {
+    background: transparent url("../img/emailReg.png") no-repeat 10px center;
+  }
+  .checkbox .wrapChe {
+    padding-left: 10px;
+  }
 }
