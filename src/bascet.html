@@ -204,7 +204,7 @@
                                    <p class="priceBloc__price priceBloc__price--padLef">345.00</p>
                                </div>
                                <div class="priceBloc">
-                                   <a  href="#" class="priceBloc__delete"></a>
+                                   <a  href="#" class="priceBloc__delete priceBloc--delete"></a>
                                </div>
                            </div>
                         </div>
@@ -261,12 +261,180 @@
                                     <span class="padLef-mob">Итого:</span>
                                     <p class="priceBloc__price priceBloc__price--padLef">345.00</p>
                                 </div>
-                                <div class="priceBloc">
+                                <div class="priceBloc priceBloc--delete">
                                     <a  href="#" class="priceBloc__delete"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row--borderBot clearfix">
+                <div class="col-md-6 col-sm-4">
+                    <div class="btn-bloc btn-bloc--clear">
+                        <div class="btn-bloc__wrapBtn">
+                            <button class="btOtziv btOtziv--clear">Очистить корзину</button>
+                        </div>
+                        <div class="btnOtz btnOtz--clear"></div>
+                    </div>
+                    <div class="btn-bloc btn-bloc--clear btn-bloc--update">
+                        <div class="btn-bloc__wrapBtn">
+                            <button class="btOtziv btOtziv--clear">Обновить корзину</button>
+                        </div>
+                        <div class="btnOtz btnOtz--clear"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-8 clearfix">
+                    <div class="btn-bloc btn-bloc--clear btn-bloc--continue">
+                        <div class="btn-bloc__wrapBtn">
+                            <button class="btOtziv btOtziv--clear">Продолжить покупки</button>
+                        </div>
+                        <div class="btnOtz btnOtz--clear"></div>
+                    </div>
+                    <div class="itogPrice">
+                        <table class="itogTable">
+                            <tr>
+                                <td class="itogTable__promej">Промежуточный итог</td>
+                                <td class="itogTable__price">690.00</td>
+                            </tr>
+                            <tr>
+                                <td>+ Доп. Услуга (упаковка пирога оттельно)</td>
+                                <td class="itogTable__price">56.00</td>
+                            </tr>
+                            <tr>
+                                <td>+ Самовывоз (доставка в пределах МКАД)</td>
+                                <td class="itogTable__price">120.00</td>
+                            </tr>
+                            <tr>
+                                <td class="itogTable__promocod">промокод</td>
+                                <td class="itogTable__price itogTable__price--colorRed">- 56.00</td>
+                            </tr>
+                            <tr>
+                                <td class="itogTable__itog">Общая сумма</td>
+                                <td class="itogTable__price itogTable__price--pad">810.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout">
+            <p class="checkout__text">Оформить заказ без регистрации</p>
+            <div class="btn-bloc btn-bloc--checkout">
+                <div class="btn-bloc__wrapBtn">
+                    <button class="btOtziv btOtziv--clear">Оформить заказ</button>
+                </div>
+                <div class="btnOtz btnOtz--clear"></div>
+            </div>
+        </div>
+        <div class="wrapRegisterForm wrapRegisterForm--basked">
+            <div class="wrapRegisterForm__borderLight">
+                <div class="wrapRegisterForm__borderBold">
+                    <form id="register" action="#" class="pageRegister">
+                        <h2 class="tittleForm">Оформить заказ</h2>
+                        <div class="blocFormTop">
+                            <p class="promokodTitle">промокод</p>
+                            <div class="promokodForm">
+                                <input type="text" class="promokodForm__inpTex">
+                                <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--bg btn-bloc__wrapBtn--border">
+                                    <button class="inpSub inpSubRegister inpEntr btOtziv " >Применить</button>
+                                    <div class="borderWrapRegist"></div>
+                                </div>
+                            </div>
+                            <div class="wrapChe wrapChe--bascet">
+                                <input id="dop" type="checkbox">
+                                <label for="dop">дополнительные услуги</label>
+                            </div>
+                            <div class="numPay">
+                                <label for="numPay">Упаковать каждый пирог отдельно</label>
+                                <div class="wrapInputNumber">
+                                    <input id="numPay" type="number" class="inpNumber inpNumber--bascet">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blocBotForm">
+                            <p class="promokodTitle">Способ доставки</p>
+                            <div class="deliveriForm clearfix">
+                                <div class="wrapChe wrapChe--samov">
+                                    <input id="sam" type="checkbox">
+                                    <label for="sam">Самовывоз</label>
+                                </div>
+                                <div class="wrapChe wrapChe--deliv">
+                                    <input id="deli" type="checkbox">
+                                    <label for="deli">Наша доставка</label>
+                                </div>
+                            </div>
+                            <div class="wrapSelect">
+                                <select name="predel" id="predel" class="deliveriPredel">
+                                    <option value="1">Доставка в пределах МКАД</option>
+                                    <option value="2">Доставка в пределах МКАД</option>
+                                </select>
+                            </div>
+                            <div class="blocMetro">
+                                <label for="metro">метро</label>
+                                <input type="text" id="metro">
+                            </div>
+                            <div class="blocSity">
+                                <label for="sity">город (Москва/МО)</label>
+                                <div id="sity" class="wrapSelect">
+                                    <select name="selectSity" id="selectSity" class="deliveriPredel">
+                                        <option value="1">Москва</option>
+                                        <option value="2">Москва</option>
+                                        <option value="3">Москва</option>
+                                        <option value="4">Москва</option>
+                                        <option value="5">Москва</option>
+                                        <option value="6">Москва</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="blocMetro">
+                                <label for="street">Улица</label>
+                                <input type="text" id="street">
+                            </div>
+                            <div class="blocNumberHome">
+                                <div class="pod">
+                                    <label for="pod">Подъезд</label>
+                                    <input type="text" id="pod">
+                                </div>
+                                <div class="etaj">
+                                    <label for="etaj">Этаж</label>
+                                    <input type="text" id="etaj">
+                                </div>
+                                <div class="kvart">
+                                    <label for="kvart">квартира</label>
+                                    <input type="text" id="kvart">
+                                </div>
+                            </div>
+                            <div class="deliveriForm deliveriForm--bottom clearfix">
+                                <div class="wrapChe wrapChe--samov">
+                                    <input id="saveadres" type="checkbox">
+                                    <label for="saveadres">
+                                        Сохранить адрес
+                                        доставки в ЛК
+                                    </label>
+                                </div>
+                                <div class="wrapChe wrapChe--deliv">
+                                    <input id="pasteadres" type="checkbox">
+                                    <label for="pasteadres">
+                                        Вставить адрес
+                                        автоматически
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blocDateDeliveri">
+                            <p class="promokodTitle">Дата и время доставки </p>
+                            <div class="wrapDate">
+                                <input type="text">
+                            </div>
+                        </div>
+
+
+
+
+                    </form>
                 </div>
             </div>
         </div>

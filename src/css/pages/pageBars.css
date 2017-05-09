@@ -176,6 +176,348 @@
 .padLef-mob2 {
   display: none;
 }
+.btn-bloc--clear {
+  display: inline-block;
+  margin-top: 40px;
+  margin-right: 55px;
+}
+.btOtziv--clear {
+  width: 184px;
+}
+.btnOtz--clear {
+  width: 190px;
+  top: 4px;
+  left: 4px;
+}
+.btn-bloc--update {
+  margin-right: 0;
+}
+.btn-bloc--continue {
+  float: right;
+  margin-right: 0;
+}
+.itogPrice {
+  clear: both;
+}
+.itogTable {
+  margin-top: 50px;
+  float: right;
+}
+.itogTable td {
+  color: white;
+  font-size: 14px;
+  font-family: "gmed", sans-serif;
+  padding-bottom: 20px;
+  text-align: right;
+}
+.itogTable td:first-child {
+  padding-right: 40px;
+}
+.itogTable .itogTable__promej {
+  text-transform: uppercase;
+  color: #e5c02f;
+  font-size: 16px;
+}
+.itogTable .itogTable__promocod {
+  text-transform: uppercase;
+}
+.itogTable .itogTable__itog {
+  color: #e5c02f;
+  font-size: 20px;
+  font-family: "gbold", sans-serif;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+.itogTable .itogTable__price {
+  font-family: "glight", sans-serif;
+  background: url("../img/rubBig.png") no-repeat;
+  text-align: left;
+  padding-left: 25px;
+}
+.itogTable .itogTable__price--colorRed {
+  color: #a34343;
+}
+.itogTable .itogTable__price--pad {
+  padding-top: 20px;
+  font-size: 18px;
+  background-position: 0 22px;
+}
+.row--borderBot {
+  display: block;
+  border-bottom: 1px solid white;
+  width: 100%;
+  height: auto;
+}
+.checkout {
+  float: right;
+  margin-top: 40px;
+}
+.checkout__text {
+  color: #e5c02f;
+  font-family: "gmed", sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-right: 40px;
+}
+.btn-bloc--checkout {
+  display: inline-block;
+}
+.wrapRegisterForm--basked {
+  margin-top: 130px;
+  width: 100%;
+}
+.tittleForm {
+  color: #5e191d;
+  font-size: 50px;
+  font-family: "tFi", sans-serif;
+  text-align: center;
+  padding: 25px 0;
+}
+.promokodTitle {
+  font-family: "gbold", sans-serif;
+  color: #303136;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+.promokodForm {
+  max-width: 400px;
+  margin: 0 auto 25px;
+}
+.promokodForm__inpTex {
+  width: 184px;
+  height: 40px;
+  border: 1px solid #5e191d;
+  margin-right: 20px;
+  background: transparent;
+  padding-left: 15px;
+}
+.wrapChe--bascet {
+  text-align: center;
+}
+.wrapChe--bascet label {
+  color: #303136;
+  font-family: "gmed", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.blocFormTop {
+  border-bottom: 1px solid black;
+  display: block;
+  width: 445px;
+  margin: 0 auto 25px;
+}
+.numPay {
+  text-align: center;
+  margin: 20px 0;
+}
+.numPay label {
+  display: inline-block;
+  color: #303136;
+  font-family: "gmed", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  padding-right: 10px;
+}
+.numPay .wrapInputNumber {
+  display: inline-block;
+  border-color: #5e191d;
+}
+.numPay .jq-number__field {
+  border: 2px solid rgba(94, 25, 29, 0.5);
+  box-shadow: none;
+}
+.numPay .jq-number__spin {
+  background: url('../img/arrowNum2.png') no-repeat;
+}
+.numPay .jq-number__spin.plus {
+  background-position: 0 -10px;
+}
+.numPay .jq-number__field input {
+  color: #303136;
+}
+.deliveriForm {
+  width: 450px;
+  margin: 0 auto 20px;
+}
+.wrapChe--samov {
+  float: left;
+}
+.wrapChe--samov label {
+  font-family: "gmed", sans-serif;
+  color: #303136;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.wrapChe--deliv {
+  float: right;
+}
+.wrapChe--deliv label {
+  font-family: "gmed", sans-serif;
+  color: #303136;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.wrapSelect {
+  display: block;
+  max-width: 450px;
+  padding: 4px;
+  margin: 0 auto 20px;
+  border: 1px solid #5e191d;
+}
+.deliveriPredel {
+  display: block!important;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid rgba(94, 25, 29, 0.5);
+}
+.deliveriPredel .jq-selectbox__select-text {
+  width: 100%;
+  text-align: center;
+  font-family: "gmed", sans-serif;
+  color: #303136;
+  font-size: 14px;
+}
+.deliveriPredel .jq-selectbox__dropdown {
+  top: 37px;
+  bottom: auto !important;
+}
+.blocMetro {
+  max-width: 450px;
+  margin: 0 auto 20px;
+}
+.blocMetro label {
+  display: block;
+  text-transform: uppercase;
+  font-family: "gmed", sans-serif;
+  color: #303136;
+  font-size: 14px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.blocMetro input {
+  padding-left: 15px;
+  width: 450px;
+  height: 40px;
+  border: 1px solid #5e191d;
+  background: transparent;
+}
+.blocSity {
+  max-width: 450px;
+  margin: 0 auto 20px;
+}
+.blocSity label {
+  display: block;
+  text-transform: uppercase;
+  font-family: "gmed", sans-serif;
+  color: #303136;
+  font-size: 14px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.blocSity input {
+  padding-left: 15px;
+  width: 450px;
+  height: 40px;
+  border: 1px solid #5e191d;
+  background: transparent;
+}
+.blocNumberHome {
+  max-width: 450px;
+  margin: 0 auto 20px;
+}
+.blocNumberHome .pod {
+  display: inline-block;
+  width: 136px;
+  margin-right: 12px;
+}
+.blocNumberHome .pod label {
+  display: block;
+  text-transform: uppercase;
+  font-family: "gmed", sans-serif;
+  color: #303136;
+  font-size: 14px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.blocNumberHome .pod input {
+  width: 136px;
+  height: 40px;
+  border: 1px solid #5e191d;
+  background: transparent;
+  padding-left: 10px;
+}
+.blocNumberHome .etaj {
+  display: inline-block;
+  width: 136px;
+  margin-right: 12px;
+}
+.blocNumberHome .etaj label {
+  display: block;
+  text-transform: uppercase;
+  font-family: "gmed", sans-serif;
+  color: #303136;
+  font-size: 14px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.blocNumberHome .etaj input {
+  width: 136px;
+  height: 40px;
+  border: 1px solid #5e191d;
+  background: transparent;
+  padding-left: 10px;
+}
+.blocNumberHome .kvart {
+  display: inline-block;
+  width: 136px;
+  margin-right: 12px;
+  margin-right: 0;
+}
+.blocNumberHome .kvart label {
+  display: block;
+  text-transform: uppercase;
+  font-family: "gmed", sans-serif;
+  color: #303136;
+  font-size: 14px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.blocNumberHome .kvart input {
+  width: 136px;
+  height: 40px;
+  border: 1px solid #5e191d;
+  background: transparent;
+  padding-left: 10px;
+}
+.deliveriForm--bottom label {
+  text-transform: inherit;
+  max-width: 124px;
+  display: inline-block;
+  font-size: 12px;
+}
+.deliveriForm--bottom .jq-checkbox {
+  vertical-align: top;
+  top: 6px;
+}
+.blocBotForm {
+  border-bottom: 1px solid black;
+  max-width: 450px;
+  margin: 0 auto 20px;
+}
+.blocDateDeliveri {
+  border-bottom: 1px solid black;
+  max-width: 450px;
+  margin: 0 auto 20px;
+}
 @media screen and (max-width: 1200px) {
   .priceBloc__price--padLef2 {
     margin-left: 0;
@@ -203,6 +545,49 @@
   .wrapBlocPrice--pad {
     padding-top: 80px;
     padding-bottom: 30px;
+  }
+}
+@media all and (max-width: 768px) {
+  .btn-bloc--clear {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+  }
+  .btn-bloc--continue {
+    float: none;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+  }
+  .itogTable {
+    float: none;
+    margin: 50px auto;
+  }
+}
+@media all and (max-width: 510px) {
+  .checkout {
+    float: none;
+  }
+  .checkout__text {
+    padding: 0 0 20px 0;
+    display: block;
+    text-align: center;
+  }
+  .btn-bloc--checkout {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+  }
+  .wrapBlocPrice--pad {
+    position: relative;
+  }
+  .priceBloc--delete {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+  }
+  .priceBloc--delete a {
+    margin: 0;
   }
 }
 @media all and (max-width: 410px) {
@@ -233,5 +618,19 @@
   .btnOtz--barsItem {
     display: inline-block !important;
     width: auto;
+  }
+  .priceBloc--delete {
+    bottom: 10px;
+  }
+}
+@media all and (max-width: 330px) {
+  .itogTable .itogTable__price {
+    background-position: 0 15px;
+  }
+  .itogTable .itogTable__price--colorRed {
+    background-position: 0 0;
+  }
+  .itogTable .itogTable__price--pad {
+    background-position: 0 38px;
   }
 }
