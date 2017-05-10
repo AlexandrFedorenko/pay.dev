@@ -6428,3 +6428,38 @@ html .ui-button.ui-state-disabled:active {
     background-position: 0 38px;
   }
 }
+.tittleForm--wiz {
+  max-width: 350px;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+.podTittle {
+  text-align: center;
+  color: #303136;
+  font-family: "greg", sans-serif;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.promokodTitle--pad,
+.promokodTitle--pad,
+.wrapChe--bascetNoReg {
+  padding-top: 15px;
+}
+.blocBotForm--noregistr {
+  border: none;
+}
+.blocComents {
+  max-width: 450px;
+  margin: 0 auto 30px;
+}
+.promokodTitle--coments {
+  padding-bottom: 15px;
+}
+.textarea {
+  max-width: 450px;
+  width: 100%;
+  height: 151px;
+  border: 1px solid #5e191d;
+  resize: none;
+  background: transparent;
+}
