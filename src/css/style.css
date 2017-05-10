@@ -2211,14 +2211,16 @@ html.js .loader_inner {
 @media screen and (min-width: 1920px) {
   .bg,
   .bgRegistr,
-  .bgBascet {
+  .bgBascet,
+  .bg-admin {
     background-size: cover;
   }
 }
 @media screen and (max-width: 1400px) {
   .bg,
   .bgRegistr,
-  .bgBascet {
+  .bgBascet,
+  .bg-admin {
     background: url("../img/bg-1360.jpg");
   }
 }
@@ -6462,4 +6464,81 @@ html .ui-button.ui-state-disabled:active {
   border: 1px solid #5e191d;
   resize: none;
   background: transparent;
+}
+#registerNo .error {
+  border-color: red;
+}
+#nameReg-error,
+#phoneReg-error,
+#emailReg-error,
+#street-error {
+  display: none!important;
+}
+.tabTittle {
+  color: #e5c02f;
+  text-transform: uppercase;
+  font-family: "gmed", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.nav-tabs--admin > li:first-child {
+  margin-left: 100px;
+}
+.tab-content--account {
+  max-height: 100%;
+  overflow: visible;
+  margin-top: 0;
+}
+.wrapRegisterForm--account {
+  margin-top: 60px;
+  width: 100%;
+}
+.tittleAccount {
+  color: #303136;
+  font-family: "gbold", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+.wrapSelect--account {
+  display: inline-block;
+  margin-right: 25px;
+}
+.wrapSelect--account:last-child {
+  margin-right: 0;
+}
+.deliveriPredel--account {
+  width: 120px;
+}
+.blocSity--account {
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .nav-tabs--admin > li:first-child {
+    margin-left: 0;
+  }
+}
+@media all and (max-width: 992px) {
+  .nav-tabs--admin > li {
+    margin: 0 auto 10px;
+    display: block;
+  }
+  .nav-tabs--admin > li .wrap-itemNav {
+    display: inline-block;
+  }
+}
+@media all and (max-width: 550px) {
+  .wrapSelect--account {
+    display: block;
+    width: 130px;
+    margin: 0 auto 20px;
+    float: none;
+  }
+  .wrapSelect--account:last-child {
+    margin-right: auto;
+  }
 }

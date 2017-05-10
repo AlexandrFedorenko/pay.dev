@@ -1,0 +1,98 @@
+/* font-family: "TMVinograd-Filled"; */
+@font-face {
+  font-family: "tFi";
+  src: url("fonts/vino/TMVinograd-Filled.otf"), url("fonts/vino/TMVinograd-Filled.ttf");
+}
+/* font-family: "TMVinograd-Filled"; */
+@font-face {
+  font-family: "tFiOb";
+  src: url("fonts/vino/TMVinograd-FilledOblique.otf"), url("fonts/vino/TMVinograd-FilledOblique.ttf");
+}
+/* font-family: "GothamProBold"; */
+@font-face {
+  font-family: "gbold";
+  src: url("fonts/GothamProBold.ttf"), url("fonts/GothamProBold.woff");
+}
+/* font-family: "GothamProRegular"; */
+@font-face {
+  font-family: "greg";
+  src: url("fonts/GothamProRegular.ttf"), url("fonts/GothamProRegular.woff");
+}
+/* font-family: "GothamProLight"; */
+@font-face {
+  font-family: "glight";
+  src: url("fonts/GothamProLight.ttf"), url("fonts/GothamProLight.woff");
+}
+/* font-family: "GothamProLight"; */
+@font-face {
+  font-family: "gmed";
+  src: url("fonts/GothamProMedium.ttf"), url("fonts/GothamProMedium.woff");
+}
+.tabTittle {
+  color: #e5c02f;
+  text-transform: uppercase;
+  font-family: "gmed", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.nav-tabs--admin > li:first-child {
+  margin-left: 100px;
+}
+.tab-content--account {
+  max-height: 100%;
+  overflow: visible;
+  margin-top: 0;
+}
+.wrapRegisterForm--account {
+  margin-top: 60px;
+  width: 100%;
+}
+.tittleAccount {
+  color: #303136;
+  font-family: "gbold", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+.wrapSelect--account {
+  display: inline-block;
+  margin-right: 25px;
+}
+.wrapSelect--account:last-child {
+  margin-right: 0;
+}
+.deliveriPredel--account {
+  width: 120px;
+}
+.blocSity--account {
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .nav-tabs--admin > li:first-child {
+    margin-left: 0;
+  }
+}
+@media all and (max-width: 992px) {
+  .nav-tabs--admin > li {
+    margin: 0 auto 10px;
+    display: block;
+  }
+  .nav-tabs--admin > li .wrap-itemNav {
+    display: inline-block;
+  }
+}
+@media all and (max-width: 550px) {
+  .wrapSelect--account {
+    display: block;
+    width: 130px;
+    margin: 0 auto 20px;
+    float: none;
+  }
+  .wrapSelect--account:last-child {
+    margin-right: auto;
+  }
+}

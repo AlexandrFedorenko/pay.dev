@@ -67,7 +67,7 @@ $(function () {
             cursorcolor: '#000000'
         });
 
-    $(".tab-content").niceScroll({
+    $(".tab-content2").niceScroll({
         cursorcolor: '#000000',
         horizrailenabled:false
     });
@@ -105,6 +105,50 @@ $(function () {
             },
 
             mess:{
+                required: ""
+            }
+
+        }
+
+    });
+
+    //validate popup otziv
+    $("#registerNo").validate({
+
+        rules:{
+
+            nameReg:{
+                required: true
+            },
+
+            phoneReg:{
+                required: true
+            },
+
+            emailReg:{
+                required: true
+            },
+
+            street:{
+                required: true
+            }
+        },
+
+        messages:{
+
+            nameReg:{
+                required: ""
+            },
+
+            phoneReg:{
+                required: ""
+            },
+
+            emailReg:{
+                required: ""
+            },
+
+            street:{
                 required: ""
             }
 

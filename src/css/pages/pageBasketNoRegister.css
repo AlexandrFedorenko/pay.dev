@@ -63,3 +63,12 @@
   resize: none;
   background: transparent;
 }
+#registerNo .error {
+  border-color: red;
+}
+#nameReg-error,
+#phoneReg-error,
+#emailReg-error,
+#street-error {
+  display: none!important;
+}
