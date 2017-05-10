@@ -28,6 +28,10 @@
   font-family: "gmed";
   src: url("fonts/GothamProMedium.ttf"), url("fonts/GothamProMedium.woff");
 }
+input,
+select {
+  outline: none!important;
+}
 .tittleH {
   font-family: "tFi", sans-serif;
   font-size: 60px;
@@ -225,6 +229,12 @@
   display: block;
   position: relative;
   top: 5px;
+  left: 5px;
+}
+.webkit .jq-checkbox.checked .jq-checkbox__div {
+  left: 9px;
+}
+.safari .jq-checkbox.checked .jq-checkbox__div {
   left: 5px;
 }
 .btn-bloc__registr--color {

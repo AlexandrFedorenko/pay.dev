@@ -28,6 +28,9 @@
   font-family: "gmed";
   src: url("fonts/GothamProMedium.ttf"), url("fonts/GothamProMedium.woff");
 }
+.safari .inpDate {
+  padding-left: 20px;
+}
 .bascetBloc__tittle {
   color: #e5c02f;
   font-family: "gmed", sans-serif;
@@ -508,6 +511,9 @@
   vertical-align: top;
   top: 6px;
 }
+.jq-checkbox {
+  margin: 0;
+}
 .blocBotForm {
   border-bottom: 1px solid black;
   max-width: 450px;
@@ -517,6 +523,152 @@
   border-bottom: 1px solid black;
   max-width: 450px;
   margin: 0 auto 20px;
+}
+.wrapDate {
+  border: 1px solid #5e191d;
+  padding: 4px;
+  max-width: 450px;
+  margin-bottom: 20px;
+  background: url("../img/date.png") no-repeat 405px;
+}
+.inpDate {
+  width: 100%;
+  height: 29px;
+  border: 2px solid rgba(94, 25, 29, 0.5);
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "gmed", sans-serif;
+  color: #303136;
+  text-align: center;
+}
+.datepicker.active {
+  width: 450px!important;
+  border: 1px solid #303136;
+  background-color: #dcdcdc;
+  color: black;
+}
+.datepicker--pointer {
+  display: none;
+}
+.datepicker--nav {
+  background: #e5c02f;
+}
+.ui-state-default {
+  width: 20px;
+  height: 12px;
+  text-align: center;
+}
+.datepicker--body.active {
+  width: 200px;
+  margin: 0 auto;
+}
+.datepicker--cell.-selected- {
+  color: #fff;
+  border: none;
+  background: #e5c02f;
+  border-radius: 0;
+}
+.blockTime--style {
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  max-width: 450px;
+  width: 100%;
+  border: 1px solid #303136;
+  background-color: #dcdcdc;
+  z-index: 100;
+}
+.blockTime__tittle {
+  font-family: "gbold", sans-serif;
+  font-size: 12px;
+  color: #303136;
+  text-align: center;
+  padding: 4px 0;
+  background: #e5c02f;
+}
+.blockTime__time {
+  font-family: "gbold", sans-serif;
+  font-size: 12px;
+  color: #303136;
+  padding-left: 10px;
+}
+.blockTime__res {
+  font-family: "gbold", sans-serif;
+  font-size: 12px;
+  color: #303136;
+  padding-left: 10px;
+}
+.blockTime__hour {
+  font-family: "gbold", sans-serif;
+  font-size: 12px;
+  color: #303136;
+  padding-left: 10px;
+}
+.blockTime__min {
+  font-family: "gbold", sans-serif;
+  font-size: 12px;
+  color: #303136;
+  padding-left: 10px;
+}
+.ui-widget.ui-widget-content {
+  border: none;
+  width: 96%;
+  margin: 0 auto 10px;
+  background-color: #b0b0b0;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  border-radius: 0;
+  background-color: #e5c02f;
+  border: none;
+  cursor: pointer;
+}
+.blockTime__botoom {
+  border-top: 1px solid black;
+}
+.blocBotTime__left {
+  font-family: "gbold", sans-serif;
+  font-size: 12px;
+  color: #303136;
+  padding-left: 10px;
+  float: left;
+  padding-top: 6px;
+  cursor: pointer;
+  transition: color .2s;
+}
+.blocBotTime__left:hover {
+  color: #e5c02f;
+}
+.blocBotTime__right {
+  font-family: "gbold", sans-serif;
+  font-size: 12px;
+  color: #303136;
+  padding-left: 10px;
+  float: right;
+  padding-top: 6px;
+  padding-right: 10px;
+  cursor: pointer;
+  transition: color .2s;
+}
+.blocBotTime__right:hover {
+  color: #e5c02f;
+}
+.timeSel {
+  position: relative;
+}
+.wrapChe_wiz {
+  max-width: 140px!important;
+}
+.btn-bloc__wrapBtn--oform {
+  margin: 20px auto 40px;
+  display: block;
+  width: 186px;
 }
 @media screen and (max-width: 1200px) {
   .priceBloc__price--padLef2 {
@@ -562,6 +714,106 @@
   .itogTable {
     float: none;
     margin: 50px auto;
+  }
+}
+@media all and (max-width: 560px) {
+  .tittleForm {
+    font-size: 40px;
+  }
+  .blocFormTop,
+  .deliveriForm {
+    width: 100%;
+  }
+  .promokodForm__inpTex {
+    display: block;
+    margin: 0 auto 20px;
+  }
+  .btn-bloc__wrapBtn--bg {
+    display: block;
+    width: 186px;
+    margin: 0 auto;
+    float: none;
+  }
+  .wrapChe--bascet label {
+    font-size: 14px;
+  }
+  .numPay label {
+    display: block;
+    padding-bottom: 20px;
+  }
+  .wrapChe--samov {
+    float: none;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .wrapChe--deliv {
+    float: none;
+    text-align: center;
+    padding-left: 42px;
+  }
+  .wrapSelect,
+  .wrapSelect {
+    width: 98%;
+  }
+  .blocMetro input {
+    width: 98%;
+    margin: 0 auto;
+    display: block;
+  }
+  .blocMetro label,
+  .blocSity label {
+    padding-left: 6px;
+  }
+  .blocNumberHome .pod {
+    display: block;
+    width: 200px;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+  .blocNumberHome .pod input {
+    width: 100%;
+  }
+  .blocNumberHome .etaj {
+    display: block;
+    width: 200px;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+  .blocNumberHome .etaj input {
+    width: 100%;
+  }
+  .blocNumberHome .kvart {
+    display: block;
+    width: 200px;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+  .blocNumberHome .kvart input {
+    width: 100%;
+  }
+  .deliveriForm--bottom label {
+    text-transform: inherit;
+    max-width: 100%;
+    display: inline-block;
+    font-size: 12px;
+    padding-top: 8px;
+  }
+  .wrapChe--deliv {
+    padding-left: 0;
+  }
+  .wrapChe--samov {
+    padding-left: 5px;
+  }
+  .wrapDate {
+    width: 98%;
+    margin: 0 auto 20px;
+  }
+  .timeSel {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  .datepicker.active {
+    width: 250px!important;
   }
 }
 @media all and (max-width: 510px) {
