@@ -428,6 +428,9 @@
     top: 4px;
     left: 3px;
   }
+  .btnOtz--zacaz {
+    left: 7px;
+  }
 }
 @media all and (max-width: 460px) {
   .menu__li {
@@ -439,5 +442,10 @@
   }
   .blocHover--row {
     margin: 0;
+  }
+}
+@media all and (max-width: 360px) {
+  .btnOtz--zacaz {
+    left: 4px;
   }
 }

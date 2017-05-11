@@ -4797,6 +4797,9 @@ input[type='submit'].styler[disabled] {
     top: 4px;
     left: 3px;
   }
+  .btnOtz--zacaz {
+    left: 7px;
+  }
 }
 @media all and (max-width: 460px) {
   .menu__li {
@@ -4808,6 +4811,11 @@ input[type='submit'].styler[disabled] {
   }
   .blocHover--row {
     margin: 0;
+  }
+}
+@media all and (max-width: 360px) {
+  .btnOtz--zacaz {
+    left: 4px;
   }
 }
 .slick-slide img {
@@ -5595,6 +5603,12 @@ select {
   .safari .inpText {
     text-align: left;
     padding-left: 55px;
+  }
+  .btn-bloc__wrapBtn--border {
+    width: 187px!important;
+  }
+  .btn-bloc__wrapBtn--border .borderWrapRegist {
+    width: 190px;
   }
 }
 @media all and (max-width: 360px) {

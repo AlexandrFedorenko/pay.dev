@@ -305,6 +305,12 @@ select {
     text-align: left;
     padding-left: 55px;
   }
+  .btn-bloc__wrapBtn--border {
+    width: 187px!important;
+  }
+  .btn-bloc__wrapBtn--border .borderWrapRegist {
+    width: 190px;
+  }
 }
 @media all and (max-width: 360px) {
   .inpPhone {
