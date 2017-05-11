@@ -231,7 +231,7 @@ select {
   top: 5px;
   left: 5px;
 }
-.webkit .jq-checkbox.checked .jq-checkbox__div {
+.webkit .wrapChe--bascet .jq-checkbox.checked .jq-checkbox__div {
   left: 9px;
 }
 .safari .jq-checkbox.checked .jq-checkbox__div {
