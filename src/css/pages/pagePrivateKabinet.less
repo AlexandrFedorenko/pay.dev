@@ -1,7 +1,7 @@
 @import "../variables";
 
-.tabTittle{
-  color:@yel;
+.tabTittle {
+  color: @yel;
   text-transform: uppercase;
   font-family: @gmed;
   font-size: @f18;
@@ -9,19 +9,23 @@
   padding-top: 60px;
   padding-bottom: 20px;
 }
+
 .nav-tabs--admin > li:first-child {
   margin-left: 100px;
 }
+
 .tab-content--account {
   max-height: 100%;
   overflow: visible;
   margin-top: 0;
 }
-.wrapRegisterForm--account{
+
+.wrapRegisterForm--account {
   margin-top: 60px;
   width: 100%;
 }
-.tittleAccount{
+
+.tittleAccount {
   color: @colorPlaceholder;
   font-family: @gbold;
   font-size: @f20;
@@ -30,46 +34,264 @@
   padding-bottom: 30px;
   padding-top: 40px;
 }
-.wrapSelect--account{
+
+.wrapSelect--account {
   display: inline-block;
   margin-right: 25px;
-  &:last-child{
+  &:last-child {
     margin-right: 0;
   }
 }
-.deliveriPredel--account{
+
+.deliveriPredel--account {
   width: 120px;
 }
-.blocSity--account{
+
+.blocSity--account {
   padding-bottom: 40px;
 }
 
+.blocMetro--adres {
+  label {
+    font-size: 16px;
+  }
+}
 
+.btn-bloc--adres {
+  max-width: 450px;
+  margin: 30px auto;
+}
 
+.btn-bloc__registr--adres {
+  padding-left: 0;
+}
 
+.tittleAccount--bonus {
+  padding-top: 80px;
+}
 
-@media screen and (max-width: 1200px){
+.bonBal {
+  color: @colorPlaceholder;
+  font-family: @glight;
+  font-size: @f14;
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto 25px;
+}
+
+.blocBonus {
+  width: 200px;
+  height: 40px;
+  border: 1px solid @colorBorderForm;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.nalBonus {
+  color: @colorPlaceholder;
+  font-family: @glight;
+  font-size: @f12;
+  text-align: center;
+}
+
+.inpSub--bonus {
+  margin-top: 50px;
+}
+
+.promokodForm--bonus {
+  text-align: center;
+  input {
+    font-size: @f18;
+    font-family: @glight;
+    margin-right: 0;
+  }
+}
+
+.blocSelectHistory {
+  max-width: 825px;
+  margin: 0 auto;
+}
+
+.dataZacaza {
+  display: inline-block;
+  width: 390px;
+  margin: 50px 20px 50px 0;
+  border: 1px solid white;
+  &:last-child {
+    margin-right: 0;
+  }
+  .jq-selectbox__select-text {
+    color: @white;
+  }
+  .deliveriPredel {
+    border: 2px solid @yel;
+    color: @whitet;
+  }
+  .jq-selectbox__trigger {
+    border-color: white;
+  }
+  .jq-selectbox__trigger-arrow {
+    background: url("/../../img/nextYellow.png") no-repeat;
+  }
+}
+
+.wrapRegisterForm--history {
+  width: 100%;
+}
+
+.imgHistory {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.tittleItemHistory {
+  color: @colorPlaceholder;
+  font-family: @gbold;
+  text-transform: uppercase;
+  font-size: @f20;
+}
+
+.tableHistory__name {
+  color: @colorBorderForm;
+  font-family: @glight;
+  font-size: @f14;
+  max-width: 178px;
+  display: inline-block;
+}
+
+.tableHistory__num {
+  color: @colorBorderForm;
+  font-size: @f14;
+  font-family: @gbold;
+  text-align: right;
+  padding-right: 12px;
+}
+
+.tableHistory__num--res {
+  width: 80px;
+}
+
+.btn-bloc__wrapBtn--item {
+  width: 120px;
+  margin: 10px 0 30px 0;
+  .inpSubRegister {
+    width: 114px;
+  }
+  .borderWrapRegist {
+    width: 120px;
+  }
+}
+
+.zacazRaz {
+  border-top: 1px solid black;
+  width: 96%;
+  margin: 20px auto 80px;
+}
+
+.blocPagination {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.btn-bloc__wrapBtn--rigPad {
+  margin-right: 30px;
+}
+.blocNumPaginations__ul{
+  text-align: center;
+  padding-bottom: 40px;
+  li{
+    display: inline-block;
+    a{
+      font-family: @gbold;
+      font-size: @f14;
+      color: #84726c;
+      &:hover,
+      &:active,
+      &:focus{
+        text-decoration: none;
+        color:@colorBorderForm;
+      }
+    }
+  }
+  .blocNumPaginations__ul--active{
+    a{
+      color: @colorBorderForm;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .nav-tabs--admin > li:first-child {
     margin-left: 0;
   }
 }
-@media all and (max-width: 992px){
-  .nav-tabs--admin > li{
+
+@media all and (max-width: 992px) {
+  .nav-tabs--admin > li {
     margin: 0 auto 10px;
     display: block;
-    .wrap-itemNav{
+    .wrap-itemNav {
       display: inline-block;
     }
   }
+  .blocSelectHistory{
+    text-align: center;
+  }
+  .dataZacaza{
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .imgHistory {
+    width: 220px;
+    padding-left: 0;
+    text-align: center;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  .tittleItemHistory{
+    text-align: center;
+  }
+  .tableHistory{
+    margin: 0 auto 10px;
+  }
+  .btn-bloc__wrapBtn--item {
+    margin: 20px auto 30px;
+    display: block;
+  }
 }
-@media all and (max-width: 550px){
+
+@media all and (max-width: 550px) {
   .wrapSelect--account {
     display: block;
     width: 130px;
     margin: 0 auto 20px;
     float: none;
   }
-  .wrapSelect--account:last-child{
+
+  .wrapSelect--account:last-child {
     margin-right: auto;
+  }
+
+  .btn-bloc__registr--adres {
+    display: block;
+    float: none;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .promokodForm--bonus input {
+    margin-right: auto;
+  }
+  .zacazRaz{
+    margin: 20px auto 40px;
+  }
+  .btn-bloc__wrapBtn--rigPad {
+    display: block;
+    width: 187px;
+    margin: 0 auto 20px;
+  }
+  .dataZacaza{
+    max-width: 390px;
+    width: 90%;
   }
 }

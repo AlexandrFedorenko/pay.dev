@@ -177,7 +177,7 @@
                                     <input type="text" id="nameReg">
                                 </div>
                                 <div class="blocMetro">
-                                    <label for="phoneReg">телефон</label>
+                                    <label for="phoneReg2">телефон</label>
                                     <input type="text" id="phoneReg2">
                                 </div>
                                 <div class="blocSity blocSity--account">
@@ -226,13 +226,337 @@
             </div>
         </div>
         <div class="tab-pane" id="addres">
+            <div class="wrapRegisterForm wrapRegisterForm--account">
+                <div class="wrapRegisterForm__borderLight">
+                    <div class="wrapRegisterForm__borderBold">
+                        <form id="registerAd" action="#" class="pageRegister">
+                            <h2 class="tittleAccount">
+                                адрес доставки
+                            </h2>
 
+                            <div class="blocMetro blocMetro--adres">
+                                <label for="metro">метро</label>
+                                <input type="text" id="metro">
+                            </div>
+                            <div class="blocSity blocMetro--adres">
+                                <label>город (Москва/МО)</label>
+                                <div id="sity2" class="wrapSelect">
+                                    <select name="selectSity" id="selectSity" class="deliveriPredel">
+                                        <option value="1">Москва</option>
+                                        <option value="2">Москва</option>
+                                        <option value="3">Москва</option>
+                                        <option value="4">Москва</option>
+                                        <option value="5">Москва</option>
+                                        <option value="6">Москва</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="blocMetro blocMetro--adres">
+                                <label for="street">Улица</label>
+                                <input type="text" id="street">
+                            </div>
+                            <div class="blocNumberHome blocMetro--adres">
+                                <div class="pod">
+                                    <label for="pod">Подъезд</label>
+                                    <input type="text" id="pod">
+                                </div>
+                                <div class="etaj">
+                                    <label for="etaj">Этаж</label>
+                                    <input type="text" id="etaj">
+                                </div>
+                                <div class="kvart">
+                                    <label for="kvart">квартира</label>
+                                    <input type="text" id="kvart">
+                                </div>
+                            </div>
+                            <div class="btn-bloc btn-bloc--regis btn-bloc--pad btn-bloc--adres">
+                                <a href="#" class="btn-bloc__registr btn-bloc__registr--adres btn-bloc__registr--color">Изменить адрес доставки</a>
+                                <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--bg btn-bloc__wrapBtn--border">
+                                    <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="сохранить">
+                                    <div class="borderWrapRegist"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="tab-pane" id="bonus">
-
+            <div class="wrapRegisterForm wrapRegisterForm--account">
+                <div class="wrapRegisterForm__borderLight">
+                    <div class="wrapRegisterForm__borderBold">
+                        <form id="registerbonus" action="#" class="pageRegister">
+                            <h2 class="tittleAccount tittleAccount--bonus">
+                                бонусные баллы
+                            </h2>
+                            <p class="bonBal">
+                                На вашем счету есть неиспользованные
+                                бонусные баллы
+                            </p>
+                            <div class="promokodForm promokodForm--bonus">
+                                <input type="text" class="promokodForm__inpTex">
+                            </div>
+                            <p class="nalBonus">Бонусные баллы, действительны до 29.05.2017</p>
+                            <p class="nalBonus ballBonus">1 балл = 1 рубль</p>
+                            <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--oform  btn-bloc__wrapBtn--border inpSub--bonus">
+                                <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="использовать баллы">
+                                <div class="borderWrapRegist"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="tab-pane" id="history">
-
+            <div class="blocSelectHistory">
+                <div id="dateZacaza" class="wrapSelect dataZacaza">
+                    <select name="dateZak" id="dateZak" class="deliveriPredel">
+                        <option value="1">Выбрать дату заказа</option>
+                        <option value="2">22.03.2017</option>
+                        <option value="3">20.03.2017</option>
+                        <option value="4">23.03.2017</option>
+                        <option value="5">24.03.2017</option>
+                        <option value="6">25.03.2017</option>
+                    </select>
+                </div>
+                <div id="nnumZacaza" class="wrapSelect dataZacaza">
+                    <select name="nnumZacaza" id="nnumZacaza1" class="deliveriPredel">
+                        <option value="1">Выбрать номер заказа</option>
+                        <option value="2">15</option>
+                        <option value="3">7</option>
+                        <option value="4">6</option>
+                        <option value="5">8</option>
+                        <option value="6">9</option>
+                    </select>
+                </div>
+            </div>
+            <div class="wrapRegisterForm wrapRegisterForm--history">
+                <div class="wrapRegisterForm__borderLight">
+                    <div class="wrapRegisterForm__borderBold">
+                        <form id="registerHistiry" action="#" class="pageRegister pageRegister--item">
+                            <h2 class="tittleAccount">
+                                15 марта 2017
+                            </h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="img/001.png" alt="img" class="imgHistory">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="tittleItemHistory">заказ № 3</p>
+                                            <table class="tableHistory">
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с батвой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с белой начинкой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с капустой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Общая сумма:</td>
+                                                    <td class="tableHistory__num tableHistory__num--res">1360 руб</td>
+                                                </tr>
+                                            </table>
+                                            <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--item btn-bloc__wrapBtn--border">
+                                                <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="Подробнее">
+                                                <div class="borderWrapRegist"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="img/001.png" alt="img" class="imgHistory">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="tittleItemHistory">заказ № 3</p>
+                                            <table class="tableHistory">
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с батвой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с белой начинкой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с капустой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Общая сумма:</td>
+                                                    <td class="tableHistory__num tableHistory__num--res">1360 руб</td>
+                                                </tr>
+                                            </table>
+                                            <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--item btn-bloc__wrapBtn--border">
+                                                <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="Подробнее">
+                                                <div class="borderWrapRegist"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="img/001.png" alt="img" class="imgHistory">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="tittleItemHistory">заказ № 3</p>
+                                            <table class="tableHistory">
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с батвой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с белой начинкой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с капустой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Общая сумма:</td>
+                                                    <td class="tableHistory__num tableHistory__num--res">1360 руб</td>
+                                                </tr>
+                                            </table>
+                                            <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--item btn-bloc__wrapBtn--border">
+                                                <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="Подробнее">
+                                                <div class="borderWrapRegist"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="img/001.png" alt="img" class="imgHistory">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="tittleItemHistory">заказ № 3</p>
+                                            <table class="tableHistory">
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с батвой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с белой начинкой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с капустой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Общая сумма:</td>
+                                                    <td class="tableHistory__num tableHistory__num--res">1360 руб</td>
+                                                </tr>
+                                            </table>
+                                            <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--item btn-bloc__wrapBtn--border">
+                                                <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="Подробнее">
+                                                <div class="borderWrapRegist"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="img/001.png" alt="img" class="imgHistory">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="tittleItemHistory">заказ № 3</p>
+                                            <table class="tableHistory">
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с батвой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с белой начинкой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с капустой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Общая сумма:</td>
+                                                    <td class="tableHistory__num tableHistory__num--res">1360 руб</td>
+                                                </tr>
+                                            </table>
+                                            <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--item btn-bloc__wrapBtn--border">
+                                                <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="Подробнее">
+                                                <div class="borderWrapRegist"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="img/001.png" alt="img" class="imgHistory">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="tittleItemHistory">заказ № 3</p>
+                                            <table class="tableHistory">
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с батвой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с белой начинкой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Пирог с капустой:</td>
+                                                    <td class="tableHistory__num">2 шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tableHistory__name">Общая сумма:</td>
+                                                    <td class="tableHistory__num tableHistory__num--res">1360 руб</td>
+                                                </tr>
+                                            </table>
+                                            <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--item btn-bloc__wrapBtn--border">
+                                                <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="Подробнее">
+                                                <div class="borderWrapRegist"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <hr class="zacazRaz">
+                        <div class="blocPagination">
+                            <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--rigPad  btn-bloc__wrapBtn--border">
+                                <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="предыдущая страница">
+                                <div class="borderWrapRegist"></div>
+                            </div>
+                            <div class="btn-bloc__wrapBtn  btn-bloc__wrapBtn--border">
+                                <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="следующая страница">
+                                <div class="borderWrapRegist"></div>
+                            </div>
+                        </div>
+                        <div class="blocNumPaginations">
+                            <ul class="blocNumPaginations__ul">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="blocNumPaginations__ul--active"><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">30</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     </div>

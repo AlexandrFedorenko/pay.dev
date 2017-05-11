@@ -274,3 +274,15 @@
     overflow-y: auto;
   }
 }
+@media all and (max-width: 360px) {
+  .wrap-btItem .btn-bloc--item {
+    display: block;
+    margin: 30px auto 15px;
+    text-align: center;
+    width: 120px;
+  }
+  .wrap-btItem .btn-bloc__wrapBtn {
+    display: block;
+    width: 116px!important;
+  }
+}

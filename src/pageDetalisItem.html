@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]>
+<html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="ru">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Заголовок</title>
+    <!-- Seo Tags -->
+    <meta name="description" content="Your page description here"/>
+    <meta name="keywords" content="Your meta keywords, here"/>
+    <meta name="robots" content="index, follow">
+    <!-- /Seo Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Favicon and Touch Icon-->
+    <link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
+    <link rel="icon" href="img/favicons/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicons/favicon.png">
+    <!-- /Favicon-->
+    <style>.bgBascet {
+        background: url("img/bg-bascet.jpg") no-repeat;
+        width: 100%;
+        height: auto;
+    }</style>
+    <link rel="stylesheet" href="libs/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="libs/modernizr/modernizr.js"></script>
+</head>
+<body class="bgBascet">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<main>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-push-3 ">
+                    <div class="bloc-logo">
+                        <a href="#"><img src="img/logo.png" alt="logo"></a>
+                    </div>
+                    <nav>
+                        <ul class="menu">
+                            <li class="menu__li"><a href="#">О нас</a></li>
+                            <li class="menu__li"><a href="#">Оплата и доставка</a></li>
+                            <li class="menu__li"><a href="#">Написать нам</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn-bloc btn-bloc--mod">
+                        <div class="btn-bloc__wrapBtn">
+                            <a href="#" class="btOtziv btOtziv--zacaz">Вернуться</a>
+                        </div>
+                        <div class="btnOtz btnOtz--zacaz"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-pull-6 col-sm-6  text-center">
+                    <div class="wrap-callbec">
+                        <div class="callbec callbec--pad">
+                            <a href="#" class="callbec__bonus">Бонусная система</a>
+                            <a href="tel:+73248458470" class="callbec__number">+7 (324) 845 84 70</a>
+                            <span class="callbec__clock">9:00 - 17:00</span>
+                        </div>
+                        <div class="btn-bloc">
+                            <div class="btn-bloc__wrapBtn">
+                                <a id="js-scroolOtz" href="#" class="btOtziv"><i class="fa fa-comments-o"
+                                                                                 aria-hidden="true"></i>Отзывы</a>
+                            </div>
+                            <div class="btnOtz"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="btn-bloc btn-bloc--enter">
+                        <div class="btn-bloc__wrapBtn">
+                            <a href="#form-popup2" class="btOtziv btOtziv--enter popup-with-form2"><i
+                                    class="fa fa-user-o" aria-hidden="true"></i>Войти
+                                / Регистрация</a>
+                        </div>
+                        <div class="btnOtz btnOtz--enter"></div>
+                    </div>
+                    <div class="blocSocial">
+                        <div class="fe"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                        <div class="tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                        <div class="vk"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
+                        <div class="in"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                        <div class="li"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+                    </div>
+                    <div class="btn-bloc btn-bloc--enter btn-bloc--bars">
+                        <div id="hoverBars" class="btn-bloc__wrapBtn">
+                            <a href="#" class="btOtziv btOtziv--enter btOtziv--bars">
+                                <div class="icon-bars"></div>
+                                <span class="bars-item">2</span>
+                                <div class="btOtziv__text"><span>345.00</span>Корзина</div>
+                            </a>
+                            <div class="wrapHoverBars">
+                                <div class="blocHover">
+                                    <div class="row blocHover--row">
+                                        <div class="col-md-2">
+                                            <a class="btnHoverClose" href="#">
+                                                <div class="btn-blocHover__close">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="img/001.png" alt="img" class="barsImg">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="nameItem">Пирог с сыром</p>
+                                            <p class="priceItem">2 &#215; 10.99 &#x584;</p>
+                                        </div>
+                                    </div>
+                                    <hr class="blocHover__raz">
+                                    <div class="blocHoverItog">
+                                        <p class="blocHoverItog__poditog">Подытог: 21.99</p>
+                                        <a href="#" class="blocHoverItog__prosmotr">Просмотр корзины</a>
+                                        <a href="#" class="blocHoverItog__oformit">Оформить заказ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btnOtz btnOtz--enter btnOtz--bars"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</main>
+
+<section>
+    <div class="container">
+        <h1 class="tittleH">Личный кабинет</h1>
+        <p class="tabTittle">Настройки личного кабинета</p>
+
+        <ul class="nav nav-tabs nav-tabs--admin" id="myTab">
+            <li class="active">
+                <div class="wrap-itemNav">
+                    <a href="#account" data-toggle="tab">Мой аккаунт</a>
+                </div>
+            </li>
+            <li>
+                <div class="wrap-itemNav">
+                    <a href="#addres" data-toggle="tab">адрес доставки</a>
+                </div>
+            </li>
+            <li>
+                <div class="wrap-itemNav">
+                    <a href="#bonus" data-toggle="tab">бонусные баллы</a>
+                </div>
+            </li>
+            <li>
+                <div class="wrap-itemNav">
+                    <a href="#history" data-toggle="tab">история операций</a>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content tab-content--account">
+            <div class="tab-pane active" id="account">
+                <div class="wrapRegisterForm wrapRegisterForm--account">
+                    <div class="wrapRegisterForm__borderLight">
+                        <div class="wrapRegisterForm__borderBold">
+                            <form id="register" action="#" class="pageRegister">
+                                <h2 class="tittleAccount">
+                                    персональные данные
+                                </h2>
+                                <div class="blocMetro">
+                                    <label for="nameReg">ИМЯ</label>
+                                    <input type="text" id="nameReg">
+                                </div>
+                                <div class="blocMetro">
+                                    <label for="phoneReg2">телефон</label>
+                                    <input type="text" id="phoneReg2">
+                                </div>
+                                <div class="blocSity blocSity--account">
+                                    <label>дата рождения</label>
+                                    <div id="dateRog" class="wrapSelect wrapSelect--account">
+                                        <select name="dateRog2" id="dateRog2"
+                                                class="deliveriPredel deliveriPredel--account">
+                                            <option value="1">11</option>
+                                            <option value="2">12</option>
+                                            <option value="3">23</option>
+                                            <option value="4">24</option>
+                                            <option value="5">25</option>
+                                            <option value="6">26</option>
+                                        </select>
+                                    </div>
+                                    <div id="dateRog6" class="wrapSelect wrapSelect--account">
+                                        <select name="dateRog3" id="dateRog3"
+                                                class="deliveriPredel deliveriPredel--account">
+                                            <option value="1">01</option>
+                                            <option value="2">02</option>
+                                            <option value="3">03</option>
+                                            <option value="4">04</option>
+                                            <option value="5">05</option>
+                                            <option value="6">06</option>
+                                        </select>
+                                    </div>
+                                    <div id="dateRog5" class="wrapSelect wrapSelect--account">
+                                        <select name="dateRog4" id="dateRog4"
+                                                class="deliveriPredel deliveriPredel--account">
+                                            <option value="1">1990</option>
+                                            <option value="2">1991</option>
+                                            <option value="3">2000</option>
+                                            <option value="4">2007</option>
+                                            <option value="5">2015</option>
+                                            <option value="6">2017</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--oform  btn-bloc__wrapBtn--border">
+                                    <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="сохранить">
+                                    <div class="borderWrapRegist"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="addres">
+                <div class="wrapRegisterForm wrapRegisterForm--account">
+                    <div class="wrapRegisterForm__borderLight">
+                        <div class="wrapRegisterForm__borderBold">
+                            <form id="registerAd" action="#" class="pageRegister">
+                                <h2 class="tittleAccount">
+                                    адрес доставки
+                                </h2>
+
+                                <div class="blocMetro blocMetro--adres">
+                                    <label for="metro">метро</label>
+                                    <input type="text" id="metro">
+                                </div>
+                                <div class="blocSity blocMetro--adres">
+                                    <label>город (Москва/МО)</label>
+                                    <div id="sity2" class="wrapSelect">
+                                        <select name="selectSity" id="selectSity" class="deliveriPredel">
+                                            <option value="1">Москва</option>
+                                            <option value="2">Москва</option>
+                                            <option value="3">Москва</option>
+                                            <option value="4">Москва</option>
+                                            <option value="5">Москва</option>
+                                            <option value="6">Москва</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="blocMetro blocMetro--adres">
+                                    <label for="street">Улица</label>
+                                    <input type="text" id="street">
+                                </div>
+                                <div class="blocNumberHome blocMetro--adres">
+                                    <div class="pod">
+                                        <label for="pod">Подъезд</label>
+                                        <input type="text" id="pod">
+                                    </div>
+                                    <div class="etaj">
+                                        <label for="etaj">Этаж</label>
+                                        <input type="text" id="etaj">
+                                    </div>
+                                    <div class="kvart">
+                                        <label for="kvart">квартира</label>
+                                        <input type="text" id="kvart">
+                                    </div>
+                                </div>
+                                <div class="btn-bloc btn-bloc--regis btn-bloc--pad btn-bloc--adres">
+                                    <a href="#" class="btn-bloc__registr btn-bloc__registr--adres btn-bloc__registr--color">Изменить адрес доставки</a>
+                                    <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--bg btn-bloc__wrapBtn--border">
+                                        <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="сохранить">
+                                        <div class="borderWrapRegist"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="bonus">
+                <div class="wrapRegisterForm wrapRegisterForm--account">
+                    <div class="wrapRegisterForm__borderLight">
+                        <div class="wrapRegisterForm__borderBold">
+                            <form id="registerbonus" action="#" class="pageRegister">
+                                <h2 class="tittleAccount tittleAccount--bonus">
+                                    бонусные баллы
+                                </h2>
+                                <p class="bonBal">
+                                    На вашем счету есть неиспользованные
+                                    бонусные баллы
+                                </p>
+                                <div class="promokodForm promokodForm--bonus">
+                                    <input type="text" class="promokodForm__inpTex">
+                                </div>
+                                <p class="nalBonus">Бонусные баллы, действительны до 29.05.2017</p>
+                                <p class="nalBonus ballBonus">1 балл = 1 рубль</p>
+                                <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--oform  btn-bloc__wrapBtn--border inpSub--bonus">
+                                    <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="использовать баллы">
+                                    <div class="borderWrapRegist"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="history">
+                <div class="blocSelectHistory">
+                    <div id="dateZacaza" class="wrapSelect dataZacaza">
+                        <select name="dateZak" id="dateZak" class="deliveriPredel">
+                            <option value="1">Выбрать дату заказа</option>
+                            <option value="2">22.03.2017</option>
+                            <option value="3">20.03.2017</option>
+                            <option value="4">23.03.2017</option>
+                            <option value="5">24.03.2017</option>
+                            <option value="6">25.03.2017</option>
+                        </select>
+                    </div>
+                    <div id="nnumZacaza" class="wrapSelect dataZacaza">
+                        <select name="nnumZacaza" id="nnumZacaza1" class="deliveriPredel">
+                            <option value="1">Выбрать номер заказа</option>
+                            <option value="2">15</option>
+                            <option value="3">7</option>
+                            <option value="4">6</option>
+                            <option value="5">8</option>
+                            <option value="6">9</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="wrapRegisterForm wrapRegisterForm--history">
+                    <div class="wrapRegisterForm__borderLight">
+                        <div class="wrapRegisterForm__borderBold">
+                            <form id="registerHistiry" action="#" class="pageRegister pageRegister--item">
+                                <h2 class="tittleAccount">
+                                    заказ № 12
+                                </h2>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <img src="img/001.png" alt="img" class="imgHistory imgHistory--pad">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="tittleItemHistory tittleItemHistory--pad">пирог с батвой</p>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Количество:</p>
+                                                    <p class="blokKol__num">2 шт</p>
+                                                </div>
+                                                <div class="btn-bloc btn-bloc--item btn-bloc--left btn-bloc--itemPrice">
+                                                    <div class="btn-bloc__wrapBtn">
+                                                        <a href="#" class="btOtziv btOtziv--enter">1000 гр<span>600 р</span></a>
+                                                    </div>
+                                                    <div class="btnOtz btnOtz--enter"></div>
+                                                </div>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Цена:</p>
+                                                    <p class="blokKol__num">360 руб</p>
+                                                </div>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Дата заказа:</p>
+                                                    <p class="blokKol__num">25.05.2017</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <img src="img/001.png" alt="img" class="imgHistory imgHistory--pad">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="tittleItemHistory tittleItemHistory--pad">пирог с батвой</p>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Количество:</p>
+                                                    <p class="blokKol__num">2 шт</p>
+                                                </div>
+                                                <div class="btn-bloc btn-bloc--item btn-bloc--left btn-bloc--itemPrice">
+                                                    <div class="btn-bloc__wrapBtn">
+                                                        <a href="#" class="btOtziv btOtziv--enter">1000 гр<span>600 р</span></a>
+                                                    </div>
+                                                    <div class="btnOtz btnOtz--enter"></div>
+                                                </div>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Цена:</p>
+                                                    <p class="blokKol__num">360 руб</p>
+                                                </div>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Дата заказа:</p>
+                                                    <p class="blokKol__num">25.05.2017</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <img src="img/001.png" alt="img" class="imgHistory imgHistory--pad">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="tittleItemHistory tittleItemHistory--pad">пирог с батвой</p>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Количество:</p>
+                                                    <p class="blokKol__num">2 шт</p>
+                                                </div>
+                                                <div class="btn-bloc btn-bloc--item btn-bloc--left btn-bloc--itemPrice">
+                                                    <div class="btn-bloc__wrapBtn">
+                                                        <a href="#" class="btOtziv btOtziv--enter">1000 гр<span>600 р</span></a>
+                                                    </div>
+                                                    <div class="btnOtz btnOtz--enter"></div>
+                                                </div>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Цена:</p>
+                                                    <p class="blokKol__num">360 руб</p>
+                                                </div>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Дата заказа:</p>
+                                                    <p class="blokKol__num">25.05.2017</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <img src="img/001.png" alt="img" class="imgHistory imgHistory--pad">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="tittleItemHistory tittleItemHistory--pad">пирог с батвой</p>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Количество:</p>
+                                                    <p class="blokKol__num">2 шт</p>
+                                                </div>
+                                                <div class="btn-bloc btn-bloc--item btn-bloc--left btn-bloc--itemPrice">
+                                                    <div class="btn-bloc__wrapBtn">
+                                                        <a href="#" class="btOtziv btOtziv--enter">1000 гр<span>600 р</span></a>
+                                                    </div>
+                                                    <div class="btnOtz btnOtz--enter"></div>
+                                                </div>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Цена:</p>
+                                                    <p class="blokKol__num">360 руб</p>
+                                                </div>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Дата заказа:</p>
+                                                    <p class="blokKol__num">25.05.2017</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <img src="img/001.png" alt="img" class="imgHistory imgHistory--pad">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="tittleItemHistory tittleItemHistory--pad">пирог с батвой</p>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Количество:</p>
+                                                    <p class="blokKol__num">2 шт</p>
+                                                </div>
+                                                <div class="btn-bloc btn-bloc--item btn-bloc--left btn-bloc--itemPrice">
+                                                    <div class="btn-bloc__wrapBtn">
+                                                        <a href="#" class="btOtziv btOtziv--enter">1000 гр<span>600 р</span></a>
+                                                    </div>
+                                                    <div class="btnOtz btnOtz--enter"></div>
+                                                </div>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Цена:</p>
+                                                    <p class="blokKol__num">360 руб</p>
+                                                </div>
+                                                <div class="blokKol">
+                                                    <p class="blokKol__name">Дата заказа:</p>
+                                                    <p class="blokKol__num">25.05.2017</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="itogPrice">
+                                            <table class="itogTable itogTable--col">
+                                                <tr>
+                                                    <td class="itogTable__promej itogTable__promej--col">Промежуточный итог</td>
+                                                    <td class="itogTable__price">690.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>+ Доп. Услуга (упаковка пирога оттельно)</td>
+                                                    <td class="itogTable__price ">56.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>+ Самовывоз (доставка в пределах МКАД)</td>
+                                                    <td class="itogTable__price itogTable__price--col">120.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="itogTable__promocod itogTable__promej--col">промокод</td>
+                                                    <td class="itogTable__price itogTable__price--colorRed">- 56.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="itogTable__promocod itogTable__promej--col">бОНУСЫ</td>
+                                                    <td class="itogTable__price itogTable__price--colorRed">- 56.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="itogTable__itog itogTable__promej--col">Общая сумма</td>
+                                                    <td class="itogTable__price itogTable__price--pad itogTable__price--col">810.00</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr class="zacazRaz zacazRaz--pad">
+                            <div class="blockResult">
+                                <p class="blockResult__left">Дата заказа</p>
+                                <p class="blockResult__right">25.05.2017</p>
+                            </div>
+                            <div class="blocPagination">
+                                <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--rigPad  btn-bloc__wrapBtn--border">
+                                    <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="предыдущая страница">
+                                    <div class="borderWrapRegist"></div>
+                                </div>
+                                <div class="btn-bloc__wrapBtn  btn-bloc__wrapBtn--border">
+                                    <input class="inpSub inpSubRegister inpEntr btOtziv " type="submit" value="следующая страница">
+                                    <div class="borderWrapRegist"></div>
+                                </div>
+                            </div>
+                            <div class="blocNumPaginations">
+                                <ul class="blocNumPaginations__ul">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li class="blocNumPaginations__ul--active"><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#">30</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="wrapFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="info info--style">
+                        <li class="info__tittle">О компании</li>
+                        <li><a href="#">контакты</a></li>
+                        <li><a href="#">схема проезда</a></li>
+                        <li><a href="#">доставка и оплата</a></li>
+                        <li><a href="#">написать нам</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="info info--style">
+                        <li class="info__tittle">пользователям</li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">личный кабинет</a></li>
+                        <li><a href="#form-popup">оставить отзыв</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="contact">
+                        <li>
+                            <div class="icon-b-time"></div>
+                            Без выходных
+                            <span>9:00 - 17:00</span>
+                        </li>
+                        <li>
+                            <a href="tel:+73248458470">
+                                <div class="icon-b-phone"></div>
+                                +7 (324) 845 84 70
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:pirogi@info.net">
+                                <div class="icon-b-mail"></div>
+                                pirogi@info.net
+                            </a>
+                        </li>
+                        <li>
+                            <div class="blocSocial">
+                                <div class="fe"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                                <div class="tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                                <div class="vk"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
+                                <div class="in"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                                <div class="li"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="hidden">
+    <!--modal otziv-->
+    <div id="form-popup" class="white-popup mfp-hide">
+        <form id="myform" class="otz" action="#">
+            <p class="otzPopup__tittle">Оставить отзыв</p>
+            <p class="otzPopup__text">
+                Если вы хотите нас похвалить или поругать, то
+                оставьте ваш комментарий ниже:
+            </p>
+            <div><input id="name" name="nameOtz" class="inpName" type="text" placeholder="Введите Ваше имя" required/>
+            </div>
+            <div><textarea name="mess" id="mess" class="inpText" cols="30" rows="10"
+                           placeholder="Написать Комментарий"></textarea></div>
+            <div class="btn-bloc btn-bloc--otz btn-bloc--otz2">
+                <div class="btn-bloc__wrapBtn">
+                    <input class="inpSub btOtziv  btOtziv&#45;&#45;popupOtz" type="submit" value="Оставить отзыв">
+                </div>
+            </div>
+        </form>
+        <button title="Close (Esc)" type="button" class="mfp-close mfp-close--mod"></button>
+    </div>
+    <!---->
+
+    <!--modal registration-->
+    <div id="form-popup2" class="white-popup white-popup--reg mfp-hide">
+        <form id="myform2" class="registration" action="#">
+            <p class="otzPopup__tittle">Авторизация</p>
+            <p class="otzPopup__text">
+                Введите ваши регистрационные данные для входа в
+                ваш личный кабинет.
+            </p>
+            <div><input id="login" name="login" class="inpLogin" type="text" placeholder="Ваш e-mail или логин"
+                        required/></div>
+            <div><input id="password" name="pass" class="inpPass2" type="password" placeholder="Ваш пароль" required/>
+            </div>
+            <div class="btn-bloc btn-bloc--regis">
+                <a href="#" class="btn-bloc__registr">Регистрация</a>
+                <div class="btn-bloc__wrapBtn btn-bloc__wrapBtn--bg">
+                    <input class="inpSub inpEntr btOtziv  btOtziv&#45;&#45;popupOtz" type="submit" value="Войти">
+                </div>
+            </div>
+
+            <a href="#" class="registration__rememberPass">Забыли пароль?</a>
+            <p class="registration__enterSoc">Войти через:</p>
+            <div class="blocSocial">
+                <div class="fe"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                <div class="tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                <div class="vk"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
+                <div class="in"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                <div class="li"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+            </div>
+        </form>
+        <button title="Close (Esc)" type="button" class="mfp-close mfp-close--mod"></button>
+    </div>
+    <!---->
+
+</div>
+
+<div class="loader">
+    <div class="loader_inner"></div>
+</div>
+
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="libs/waypoints/waypoints.min.js"></script>
+<script src="libs/animate/animate-css.js"></script>
+<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+<script src="../bower_components/bootstrap/js/tab.js"></script>
+<script src="libs/nisescroll/jquery.nicescroll.min.js"></script>
+<script src="../bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<script src="../bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="../bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
+<script src="../bower_components/jquery.form-styler/jquery.formstyler.min.js"></script>
+<script src="libs/crros-browser/cross-browser.js"></script>
+<script src="libs/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="../bower_components/air-datepicker/dist/js/datepicker.min.js"></script>
+<script>
+    (function ($) {
+        $(function () {
+
+            $('input, select').styler();
+
+        });
+    })(jQuery);
+</script>
+<script>
+    $('#date').datepicker();
+</script>
+<script>
+    // masked input page register
+    jQuery(function($){
+        $("#phoneReg2").mask("+7(999) 999 99 99",{placeholder:" "});
+    });
+</script>
+<script src="js/custom.js"></script>
+<script src="js/sliderPol.js"></script>

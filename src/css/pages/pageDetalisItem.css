@@ -1,0 +1,175 @@
+/* font-family: "TMVinograd-Filled"; */
+@font-face {
+  font-family: "tFi";
+  src: url("fonts/vino/TMVinograd-Filled.otf"), url("fonts/vino/TMVinograd-Filled.ttf");
+}
+/* font-family: "TMVinograd-Filled"; */
+@font-face {
+  font-family: "tFiOb";
+  src: url("fonts/vino/TMVinograd-FilledOblique.otf"), url("fonts/vino/TMVinograd-FilledOblique.ttf");
+}
+/* font-family: "GothamProBold"; */
+@font-face {
+  font-family: "gbold";
+  src: url("fonts/GothamProBold.ttf"), url("fonts/GothamProBold.woff");
+}
+/* font-family: "GothamProRegular"; */
+@font-face {
+  font-family: "greg";
+  src: url("fonts/GothamProRegular.ttf"), url("fonts/GothamProRegular.woff");
+}
+/* font-family: "GothamProLight"; */
+@font-face {
+  font-family: "glight";
+  src: url("fonts/GothamProLight.ttf"), url("fonts/GothamProLight.woff");
+}
+/* font-family: "GothamProLight"; */
+@font-face {
+  font-family: "gmed";
+  src: url("fonts/GothamProMedium.ttf"), url("fonts/GothamProMedium.woff");
+}
+.blokKol {
+  padding-left: 10px;
+  width: 185px;
+}
+.blokKol p {
+  display: inline-block;
+  color: #5e191d;
+  font-family: "glight", sans-serif;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.blokKol .blokKol__num {
+  font-family: "gbold", sans-serif;
+  float: right;
+}
+.tittleItemHistory--pad {
+  padding-left: 10px;
+}
+.btn-bloc--itemPrice {
+  padding-left: 10px;
+  margin-top: 10px;
+  float: none;
+  padding-bottom: 15px;
+}
+.btn-bloc--itemPrice .btn-bloc__wrapBtn {
+  border: 1px solid #5e191d;
+  z-index: 9999;
+  position: relative;
+}
+.btn-bloc--itemPrice .btn-bloc--item .btOtziv--enter {
+  width: 110px;
+  font-family: "gmed", sans-serif;
+  font-size: 10px;
+  padding-top: 8px;
+  padding-right: 0;
+  text-align: center;
+}
+.btn-bloc--itemPrice .btOtziv {
+  border: 2px solid rgba(94, 25, 29, 0.5);
+  padding-right: 0;
+  text-align: center;
+  color: black;
+}
+.btn-bloc--itemPrice .btOtziv span {
+  transition: border .3s;
+  border-left: 1px solid black;
+}
+.btn-bloc--itemPrice .btnOtz {
+  border: 1px solid #5e191d;
+  z-index: 1;
+  left: 14px;
+}
+.btn-bloc--itemPrice:hover .btOtziv {
+  border: 2px solid white;
+  color: white;
+}
+.btn-bloc--itemPrice:hover .btOtziv span {
+  border-left: 1px solid white;
+}
+.imgHistory--pad {
+  margin-bottom: 40px;
+}
+.imgHistory {
+  margin-left: 14px;
+  box-shadow: 2px 2px 20px 1px black;
+}
+.itogTable--col {
+  margin-top: 0;
+  float: none;
+}
+.itogTable--col td {
+  color: #575a68;
+}
+.itogTable--col .itogTable__promej--col {
+  color: #2e2f34;
+}
+.itogTable--col .itogTable__price--col {
+  color: #303136;
+}
+.itogTable--col .itogTable__price {
+  background: url("../img/rubRed.png") no-repeat;
+}
+.itogTable--col .itogTable__price--pad {
+  background-position: 0 22px;
+}
+.blockResult {
+  text-align: right;
+  padding: 20px 0 50px 0;
+}
+.blockResult__left {
+  display: inline-block;
+  color: #303136;
+  font-size: 20px;
+  font-family: "gbold", sans-serif;
+  text-transform: uppercase;
+  padding-right: 25px;
+}
+.blockResult__right {
+  display: inline-block;
+  color: #2f3035;
+  font-size: 14px;
+  font-family: "gbold", sans-serif;
+  margin-right: 20px;
+}
+.zacazRaz--pad {
+  margin-bottom: 0;
+}
+@media all and (max-width: 992px) {
+  .imgHistory--pad {
+    margin: 10px auto 30px;
+  }
+  .blokKol {
+    padding-left: 0;
+    width: 185px;
+    margin: 0 auto 5px;
+  }
+  .btn-bloc--itemPrice {
+    padding-left: 10px;
+    float: none;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 128px;
+  }
+  .itogTable--col {
+    margin: 20px auto;
+  }
+}
+@media all and (max-width: 380px) {
+  .btn-bloc--itemPrice .btn-bloc__wrapBtn {
+    width: 117px;
+  }
+  .itogTable--col td:first-child {
+    padding-right: 5px;
+  }
+  .itogTable--col .itogTable__promej {
+    text-transform: uppercase;
+    color: #e5c02f;
+    font-size: 14px;
+  }
+  .itogTable--col .itogTable__itog {
+    font-size: 14px;
+  }
+}

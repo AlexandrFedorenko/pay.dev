@@ -1,18 +1,21 @@
 @import "variables";
 //popup otziv
 
-.mfp-container{
+.mfp-container {
   top: 5%;
 }
-.mfp-content{
+
+.mfp-content {
   max-width: 660px;
 }
-.white-popup{
-  background: url("../img/bg-popup.jpg")no-repeat top center;
+
+.white-popup {
+  background: url("../img/bg-popup.jpg") no-repeat top center;
   background-size: cover;
   height: 430px;
 }
-.otzPopup__tittle{
+
+.otzPopup__tittle {
   color: @yel;
   font-family: @tFi;
   font-size: @f50;
@@ -20,7 +23,8 @@
   padding-top: 20px;
   margin-bottom: 0;
 }
-.otzPopup__text{
+
+.otzPopup__text {
   text-align: center;
   color: @colorPopupWhit;
   font-size: @f14;
@@ -29,24 +33,26 @@
   max-width: 330px;
   margin: 0 auto;
 }
-.inpName{
+
+.inpName {
   max-width: 375px;
   width: 100%;
   height: 50px;
   margin: 0 auto 15px;
   display: block;
   border: 1px solid @white;
-  background: transparent url("../img/avatar.png")no-repeat 20px center;
+  background: transparent url("../img/avatar.png") no-repeat 20px center;
   text-align: center;
   font-family: @glight;
   color: @colorPopupWhit;
   font-size: @f14;
   &:focus,
-  &:active{
+  &:active {
     border: 1px solid @yel;
   }
 }
-.inpText{
+
+.inpText {
   max-width: 375px;
   width: 100%;
   height: 120px;
@@ -61,72 +67,81 @@
   resize: none;
   padding-top: 44px;
   &:focus,
-  &:active{
+  &:active {
     border: 1px solid @yel;
   }
 }
-.btn-bloc--popupOtz{
+
+.btn-bloc--popupOtz {
   width: 190px;
   display: block;
   margin: 0 auto 30px;
   text-align: center;
 }
-.btn-bloc--popupOtz .btnOtz--popupOtz{
+
+.btn-bloc--popupOtz .btnOtz--popupOtz {
   z-index: 0;
 }
-.inpSub{
-  padding-top: 0!important;
+
+.inpSub {
+  padding-top: 0 !important;
 }
-.btn-bloc--otz2{
-  display: block!important;
-  text-align: center!important;
-  width: 200px!important;
-  margin: 0 auto!important;
+
+.btn-bloc--otz2 {
+  display: block !important;
+  text-align: center !important;
+  width: 200px !important;
+  margin: 0 auto !important;
 }
-.mfp-close--mod{
-  background: url("../img/cloced.png")no-repeat!important;
+
+.mfp-close--mod {
+  background: url("../img/cloced.png") no-repeat !important;
   width: 44px;
   height: 44px;
-  display: block!important;
+  display: block !important;
   position: absolute;
   top: -39px;
   right: -44px;
   &:active,
-  &:focus{
+  &:focus {
     top: -39px;
     right: -44px;
   }
 }
+
 //style validation
-.error{
+.error {
   border: 1px solid red;
 }
+
 #mess-error,
 #name-error,
 #login-error,
-#pass-error{
-  display: none!important;
+#pass-error {
+  display: none !important;
 }
-@media all and (max-width: 760px){
-  .mfp-close-btn-in .mfp-close{
+
+@media all and (max-width: 760px) {
+  .mfp-close-btn-in .mfp-close {
     right: 0;
     top: -47px;
   }
 }
-@media all and (max-width: 360px){
+
+@media all and (max-width: 360px) {
   .inpName,
-  .inpText{
+  .inpText {
     width: 90%;
   }
-  .otzPopup__tittle{
+
+  .otzPopup__tittle {
     font-size: 34px;
   }
 }
 
-
 //popup registration
 
-.inpLogin{
+.inpLogin {
   max-width: 375px;
   width: 100%;
   height: 50px;
@@ -134,29 +149,31 @@
   display: block;
   border: none;
   border-bottom: 1px solid @white;
-  background: transparent url("../img/avatar.png")no-repeat 20px center;
+  background: transparent url("../img/avatar.png") no-repeat 20px center;
   text-align: center;
   font-family: @glight;
   color: @colorPopupWhit;
   font-size: @f14;
   &:focus,
-  &:active{
+  &:active {
     border-bottom: 1px solid @yel;
   }
 }
-.inpPass2{
+
+.inpPass2 {
   .inpLogin;
-  background: transparent url("../img/locked-padlock.png")no-repeat 20px center;
+  background: transparent url("../img/locked-padlock.png") no-repeat 20px center;
 }
-#myform2 .error{
+
+#myform2 .error {
   border: none;
   border-bottom: 1px solid red;
 }
 
-.btn-bloc--regis{
+.btn-bloc--regis {
   max-width: 380px;
   margin: 0 auto;
-  &::after{
+  &::after {
     display: block;
     visibility: hidden;
     clear: both;
@@ -164,7 +181,8 @@
     font-size: 0;
   }
 }
-.btn-bloc__registr{
+
+.btn-bloc__registr {
   float: left;
   color: @yel;
   font-size: @f14;
@@ -174,18 +192,21 @@
   transition: color .2s;
   &:hover,
   &:active,
-  &:focus{
+  &:focus {
     color: @whitet;
     text-decoration: none;
   }
 }
-.btn-bloc__wrapBtn--bg{
+
+.btn-bloc__wrapBtn--bg {
   float: right;
 }
-.inpEntr{
+
+.inpEntr {
   width: 190px;
 }
-.registration__rememberPass{
+
+.registration__rememberPass {
   display: block;
   font-size: @f11;
   font-family: @glight;
@@ -195,12 +216,13 @@
   padding-top: 12px;
   padding-bottom: 15px;
   transition: color .2s;
-  &:hover{
+  &:hover {
     text-decoration: none;
     color: @yel;
   }
 }
-.registration__enterSoc{
+
+.registration__enterSoc {
   color: @colorPopupWhit;
   font-family: @glight;
   font-size: @f14;
@@ -208,37 +230,60 @@
   padding-bottom: 10px;
   margin-bottom: 0;
 }
-@media all and (max-width: 350px){
-  .btn-bloc__registr{
+
+@media all and (max-width: 560px) {
+
+    .btn-bloc__registr {
+      display: block;
+      float: none;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    .btn-bloc__wrapBtn--bg {
+      display: block;
+      width: 190px;
+      margin: 0 auto;
+      float: none;
+    }
+
+}
+
+@media all and (max-width: 350px) {
+  .btn-bloc__registr {
     float: none;
     display: block;
     text-align: center;
     padding-left: 0;
     padding-bottom: 10px;
   }
-  .btn-bloc__wrapBtn{
-    display: block!important;
+
+  .btn-bloc__wrapBtn {
+    display: block !important;
     width: 190px;
   }
-  .btn-bloc__wrapBtn--bg{
+
+  .btn-bloc__wrapBtn--bg {
     float: none;
     text-align: center;
     margin: 0 auto;
   }
+
   .inpLogin,
-  .inpPass2{
+  .inpPass2 {
     width: 90%;
   }
-  .white-popup--reg{
+
+  .white-popup--reg {
     height: 480px;
   }
 }
+
 .inpName,
 .inpText,
 .inpSub,
 .mfp-close,
 .inpLogin,
-.inpPass2{
+.inpPass2 {
   outline: none;
 }
 

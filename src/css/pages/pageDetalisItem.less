@@ -1,0 +1,163 @@
+@import "../variables";
+
+.blokKol {
+  padding-left: 10px;
+  width: 185px;
+  p {
+    display: inline-block;
+    color: @colorBorderForm;
+    font-family: @glight;
+    font-size: @f14;
+    margin-bottom: 0;
+  }
+  .blokKol__num {
+    font-family: @gbold;
+    float: right;
+  }
+}
+
+.tittleItemHistory--pad {
+  padding-left: 10px;
+}
+
+.btn-bloc--itemPrice {
+  padding-left: 10px;
+  margin-top: 10px;
+  float: none;
+  padding-bottom: 15px;
+  .btn-bloc__wrapBtn {
+    border: 1px solid @colorBorderForm;
+    z-index: 9999;
+    position: relative;
+  }
+  .btn-bloc--item .btOtziv--enter {
+    width: 110px;
+    font-family: "gmed", sans-serif;
+    font-size: 10px;
+    padding-top: 8px;
+    padding-right: 0;
+    text-align: center;
+  }
+  .btOtziv {
+    border: 2px solid rgba(94, 25, 29, .5);
+    padding-right: 0;
+    text-align: center;
+    color: black;
+    span {
+      transition: border .3s;
+      border-left: 1px solid black;
+    }
+  }
+  .btnOtz {
+    border: 1px solid @colorBorderForm;
+    z-index: 1;
+    left: 14px;
+  }
+  &:hover {
+    .btOtziv {
+      border: 2px solid white;
+      color: white;
+      span {
+        border-left: 1px solid white;
+      }
+    }
+  }
+}
+
+.imgHistory--pad {
+  margin-bottom: 40px;
+}
+
+.imgHistory {
+  margin-left: 14px;
+  box-shadow: 2px 2px 20px 1px black;
+}
+
+.itogTable--col {
+  margin-top: 0;
+  float: none;
+  td {
+    color: #575a68;
+  }
+  .itogTable__promej--col {
+    color: #2e2f34;
+  }
+  .itogTable__price--col {
+    color: #303136;
+  }
+  .itogTable__price {
+    background: url("/../../img/rubRed.png") no-repeat;
+  }
+  .itogTable__price--pad {
+    background-position: 0 22px;
+  }
+}
+
+.blockResult {
+  text-align: right;
+  padding: 20px 0 50px 0;
+}
+
+.blockResult__left {
+  display: inline-block;
+  color: @colorPlaceholder;
+  font-size: @f20;
+  font-family: @gbold;
+  text-transform: uppercase;
+  padding-right: 25px;
+}
+
+.blockResult__right {
+  display: inline-block;
+  color: #2f3035;
+  font-size: @f14;
+  font-family: @gbold;
+  margin-right: 20px;
+}
+
+.zacazRaz--pad {
+  margin-bottom: 0;
+}
+
+@media all and (max-width: 992px) {
+  .imgHistory--pad {
+    margin: 10px auto 30px;
+  }
+
+  .blokKol {
+    padding-left: 0;
+    width: 185px;
+    margin: 0 auto 5px;
+  }
+
+  .btn-bloc--itemPrice {
+    padding-left: 10px;
+    float: none;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 128px;
+  }
+  .itogTable--col {
+    margin: 20px auto;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .btn-bloc--itemPrice .btn-bloc__wrapBtn {
+    width: 117px;
+  }
+
+  .itogTable--col td:first-child {
+    padding-right: 5px;
+  }
+  .itogTable--col .itogTable__promej {
+    text-transform: uppercase;
+    color: #e5c02f;
+    font-size: 14px;
+  }
+  .itogTable--col .itogTable__itog{
+    font-size: 14px;
+  }
+}
